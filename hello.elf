@@ -1,0 +1,2468 @@
+
+C:\Albert\microblaze_tutorial_aug17\hello_world_aug17\build\hello_world_aug17.elf:     file format elf32-microblazeel
+C:\Albert\microblaze_tutorial_aug17\hello_world_aug17\build\hello_world_aug17.elf
+architecture: MicroBlaze, flags 0x00000012:
+EXEC_P, HAS_SYMS
+start address 0x00000000
+
+Program Header:
+    LOAD off    0x00000074 vaddr 0x00000000 paddr 0x00000000 align 2**2
+         filesz 0x00000028 memsz 0x00000028 flags r-x
+    LOAD off    0x000000a0 vaddr 0x00000050 paddr 0x00000050 align 2**4
+         filesz 0x000014e0 memsz 0x00001d00 flags rwx
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .vectors.reset 00000008  00000000  00000000  00000074  2**2
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  1 .vectors.sw_exception 00000008  00000008  00000008  0000007c  2**2
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  2 .vectors.interrupt 00000008  00000010  00000010  00000084  2**2
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  3 .vectors.hw_exception 00000008  00000020  00000020  00000094  2**2
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  4 .text         000011ac  00000050  00000050  000000a0  2**4
+                  CONTENTS, ALLOC, LOAD, CODE
+  5 .init         0000003c  000011fc  000011fc  0000124c  2**2
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  6 .fini         00000020  00001238  00001238  00001288  2**2
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  7 .ctors        00000008  00001258  00001258  000012a8  2**2
+                  CONTENTS, ALLOC, LOAD, DATA
+  8 .dtors        00000008  00001260  00001260  000012b0  2**2
+                  CONTENTS, ALLOC, LOAD, DATA
+  9 .drvcfg_sec   00000138  00001268  00001268  000012b8  2**2
+                  CONTENTS, ALLOC, LOAD, DATA
+ 10 .rodata       00000040  000013a0  000013a0  000013f0  2**2
+                  CONTENTS, ALLOC, LOAD, READONLY, DATA
+ 11 .sdata2       00000000  000013e0  000013e0  00001580  2**0
+                  CONTENTS
+ 12 .data         00000150  000013e0  000013e0  00001430  2**2
+                  CONTENTS, ALLOC, LOAD, DATA
+ 13 .sdata        00000000  00001530  00001530  00001580  2**0
+                  CONTENTS
+ 14 .sbss         00000000  00001530  00001530  00001580  2**0
+                  CONTENTS
+ 15 .bss          00000020  00001530  00001530  00001580  2**2
+                  ALLOC
+ 16 .heap         00000400  00001550  00001550  00001580  2**0
+                  ALLOC
+ 17 .stack        00000400  00001950  00001950  00001580  2**0
+                  ALLOC
+ 18 .debug_line   00000c21  00000000  00000000  00001580  2**0
+                  CONTENTS, READONLY, DEBUGGING, OCTETS
+ 19 .debug_line_str 00000bd5  00000000  00000000  000021a1  2**0
+                  CONTENTS, READONLY, DEBUGGING, OCTETS
+ 20 .debug_info   00000e94  00000000  00000000  00002d76  2**0
+                  CONTENTS, READONLY, DEBUGGING, OCTETS
+ 21 .debug_abbrev 00000665  00000000  00000000  00003c0a  2**0
+                  CONTENTS, READONLY, DEBUGGING, OCTETS
+ 22 .debug_aranges 000001d8  00000000  00000000  00004270  2**3
+                  CONTENTS, READONLY, DEBUGGING, OCTETS
+ 23 .debug_str    0000bc29  00000000  00000000  00004448  2**0
+                  CONTENTS, READONLY, DEBUGGING, OCTETS
+ 24 .debug_rnglists 0000009a  00000000  00000000  00010071  2**0
+                  CONTENTS, READONLY, DEBUGGING, OCTETS
+ 25 .debug_frame  00000210  00000000  00000000  0001010c  2**2
+                  CONTENTS, READONLY, DEBUGGING, OCTETS
+ 26 .debug_macro  0000281f  00000000  00000000  0001031c  2**0
+                  CONTENTS, READONLY, DEBUGGING, OCTETS
+ 27 .debug_loclists 000000fd  00000000  00000000  00012b3b  2**0
+                  CONTENTS, READONLY, DEBUGGING, OCTETS
+SYMBOL TABLE:
+00000000 l    d  .vectors.reset	00000000 .vectors.reset
+00000008 l    d  .vectors.sw_exception	00000000 .vectors.sw_exception
+00000010 l    d  .vectors.interrupt	00000000 .vectors.interrupt
+00000020 l    d  .vectors.hw_exception	00000000 .vectors.hw_exception
+00000050 l    d  .text	00000000 .text
+000011fc l    d  .init	00000000 .init
+00001238 l    d  .fini	00000000 .fini
+00001258 l    d  .ctors	00000000 .ctors
+00001260 l    d  .dtors	00000000 .dtors
+00001268 l    d  .drvcfg_sec	00000000 .drvcfg_sec
+000013a0 l    d  .rodata	00000000 .rodata
+000013e0 l    d  .sdata2	00000000 .sdata2
+000013e0 l    d  .data	00000000 .data
+00001530 l    d  .sdata	00000000 .sdata
+00001530 l    d  .sbss	00000000 .sbss
+00001530 l    d  .bss	00000000 .bss
+00001550 l    d  .heap	00000000 .heap
+00001950 l    d  .stack	00000000 .stack
+00000000 l    d  .debug_line	00000000 .debug_line
+00000000 l    d  .debug_line_str	00000000 .debug_line_str
+00000000 l    d  .debug_info	00000000 .debug_info
+00000000 l    d  .debug_abbrev	00000000 .debug_abbrev
+00000000 l    d  .debug_aranges	00000000 .debug_aranges
+00000000 l    d  .debug_str	00000000 .debug_str
+00000000 l    d  .debug_rnglists	00000000 .debug_rnglists
+00000000 l    d  .debug_frame	00000000 .debug_frame
+00000000 l    d  .debug_macro	00000000 .debug_macro
+00000000 l    d  .debug_loclists	00000000 .debug_loclists
+00000000 l    df *ABS*	00000000 crt0.o
+00000008 l       .vectors.sw_exception	00000000 _vector_sw_exception
+00000010 l       .vectors.interrupt	00000000 _vector_interrupt
+00000020 l       .vectors.hw_exception	00000000 _vector_hw_exception
+00000000 l    df *ABS*	00000000 crtbegin.o
+00001258 l     O .ctors	00000000 __CTOR_LIST__
+00001260 l     O .dtors	00000000 __DTOR_LIST__
+00000084 l       .text	00000000 deregister_tm_clones
+000000cc l       .text	00000000 register_tm_clones
+000001a8 l       .text	00000000 __do_global_dtors_aux
+00001530 l     O .bss	00000001 completed.2
+00001534 l     O .bss	00000004 dtor_idx.1
+00000288 l       .text	00000000 frame_dummy
+00001538 l     O .bss	00000018 object.0
+00000000 l    df *ABS*	00000000 helloworld.c.obj
+0000037c l     F .text	00000040 Xil_Out32
+00000000 l    df *ABS*	00000000 hw_exception_handler.S.obj
+00000534 l       .text	00000000 check_sp_exception
+00000558 l       .text	00000000 ex_handler_sp_exception_disabled
+000013f0 l       .data	00000000 mb_sp_save_r3
+00000550 l       .text	00000000 ex_handler_not_sp_violation
+0000054c l       .text	00000000 ex_handler_sp_violation
+00000580 l       .text	00000000 ex_handler_ds
+00000590 l       .text	00000000 ex_handler_no_ds
+000005d0 l       .text	00000000 handle_ex_regular
+000006b4 l       .text	00000000 handle_unaligned_ex
+000005e4 l       .text	00000000 ex_handler_unaligned
+00000608 l       .text	00000000 handle_ex_regular_sdt
+0000061c l       .text	00000000 handle_fpu_exception
+0000062c l       .text	00000000 handle_other_ex
+000007f8 l       .text	00000000 handle_fp_ex
+000008bc l       .text	00000000 ex_handler_unhandled
+00000648 l       .text	00000000 handle_other_ex_tail
+00000894 l       .text	00000000 ex_handler_done
+000013e4 l       .data	00000000 ex_reg_op
+00000768 l       .text	00000000 ex_sw
+000006e0 l       .text	00000000 ex_lw
+00000724 l       .text	00000000 ex_lhw
+000013e0 l       .data	00000000 ex_tmp_data_loc_0
+000013e1 l       .data	00000000 ex_tmp_data_loc_1
+000013e2 l       .data	00000000 ex_tmp_data_loc_2
+000013e3 l       .data	00000000 ex_tmp_data_loc_3
+00000744 l       .text	00000000 ex_lw_tail
+000008c0 l       .text	00000000 lw_table
+00000768 l       .text	00000000 ex_lw_end
+000009c0 l       .text	00000000 sw_table
+0000078c l       .text	00000000 ex_sw_tail
+000007d4 l       .text	00000000 ex_shw
+000007f4 l       .text	00000000 ex_sw_end
+00000800 l       .text	00000000 handle_fp_ex_opb
+00000cac l       .text	00000000 fp_table_opb
+00000850 l       .text	00000000 handle_fp_ex_opa
+00000ac0 l       .text	00000000 fp_table_opa
+00000888 l       .text	00000000 handle_fp_ex_done
+00000890 l       .text	00000000 fp_ex_unhandled
+000008c0 l       .text	00000000 lw_r0
+000008c8 l       .text	00000000 lw_r1
+000008d0 l       .text	00000000 lw_r2
+000008d8 l       .text	00000000 lw_r3
+000008e0 l       .text	00000000 lw_r4
+000008e8 l       .text	00000000 lw_r5
+000008f0 l       .text	00000000 lw_r6
+000008f8 l       .text	00000000 lw_r7
+00000900 l       .text	00000000 lw_r8
+00000908 l       .text	00000000 lw_r9
+00000910 l       .text	00000000 lw_r10
+00000918 l       .text	00000000 lw_r11
+00000920 l       .text	00000000 lw_r12
+00000928 l       .text	00000000 lw_r13
+00000930 l       .text	00000000 lw_r14
+00000938 l       .text	00000000 lw_r15
+00000940 l       .text	00000000 lw_r16
+00000948 l       .text	00000000 lw_r17
+00000950 l       .text	00000000 lw_r18
+00000958 l       .text	00000000 lw_r19
+00000960 l       .text	00000000 lw_r20
+00000968 l       .text	00000000 lw_r21
+00000970 l       .text	00000000 lw_r22
+00000978 l       .text	00000000 lw_r23
+00000980 l       .text	00000000 lw_r24
+00000988 l       .text	00000000 lw_r25
+00000990 l       .text	00000000 lw_r26
+00000998 l       .text	00000000 lw_r27
+000009a0 l       .text	00000000 lw_r28
+000009a8 l       .text	00000000 lw_r29
+000009b0 l       .text	00000000 lw_r30
+000009b8 l       .text	00000000 lw_r31
+000009c0 l       .text	00000000 sw_r0
+000009c8 l       .text	00000000 sw_r1
+000009d0 l       .text	00000000 sw_r2
+000009d8 l       .text	00000000 sw_r3
+000009e0 l       .text	00000000 sw_r4
+000009e8 l       .text	00000000 sw_r5
+000009f0 l       .text	00000000 sw_r6
+000009f8 l       .text	00000000 sw_r7
+00000a00 l       .text	00000000 sw_r8
+00000a08 l       .text	00000000 sw_r9
+00000a10 l       .text	00000000 sw_r10
+00000a18 l       .text	00000000 sw_r11
+00000a20 l       .text	00000000 sw_r12
+00000a28 l       .text	00000000 sw_r13
+00000a30 l       .text	00000000 sw_r14
+00000a38 l       .text	00000000 sw_r15
+00000a40 l       .text	00000000 sw_r16
+00000a48 l       .text	00000000 sw_r17
+00000a50 l       .text	00000000 sw_r18
+00000a58 l       .text	00000000 sw_r19
+00000a60 l       .text	00000000 sw_r20
+00000a68 l       .text	00000000 sw_r21
+00000a70 l       .text	00000000 sw_r22
+00000a78 l       .text	00000000 sw_r23
+00000a80 l       .text	00000000 sw_r24
+00000a88 l       .text	00000000 sw_r25
+00000a90 l       .text	00000000 sw_r26
+00000a98 l       .text	00000000 sw_r27
+00000aa0 l       .text	00000000 sw_r28
+00000aa8 l       .text	00000000 sw_r29
+00000ab0 l       .text	00000000 sw_r30
+00000ab8 l       .text	00000000 sw_r31
+00000ac0 l       .text	00000000 opa_r0
+00000ad0 l       .text	00000000 opa_r1
+00000adc l       .text	00000000 opa_r2
+00000aec l       .text	00000000 opa_r3
+00000afc l       .text	00000000 opa_r4
+00000b0c l       .text	00000000 opa_r5
+00000b1c l       .text	00000000 opa_r6
+00000b2c l       .text	00000000 opa_r7
+00000b3c l       .text	00000000 opa_r8
+00000b4c l       .text	00000000 opa_r9
+00000b5c l       .text	00000000 opa_r10
+00000b6c l       .text	00000000 opa_r11
+00000b7c l       .text	00000000 opa_r12
+00000b8c l       .text	00000000 opa_r13
+00000b9c l       .text	00000000 opa_r14
+00000ba8 l       .text	00000000 opa_r15
+00000bb4 l       .text	00000000 opa_r16
+00000bc0 l       .text	00000000 opa_r17
+00000bcc l       .text	00000000 opa_r18
+00000bdc l       .text	00000000 opa_r19
+00000bec l       .text	00000000 opa_r20
+00000bfc l       .text	00000000 opa_r21
+00000c0c l       .text	00000000 opa_r22
+00000c1c l       .text	00000000 opa_r23
+00000c2c l       .text	00000000 opa_r24
+00000c3c l       .text	00000000 opa_r25
+00000c4c l       .text	00000000 opa_r26
+00000c5c l       .text	00000000 opa_r27
+00000c6c l       .text	00000000 opa_r28
+00000c7c l       .text	00000000 opa_r29
+00000c8c l       .text	00000000 opa_r30
+00000c9c l       .text	00000000 opa_r31
+00000cac l       .text	00000000 opb_r0
+00000cbc l       .text	00000000 opb_r1
+00000cc8 l       .text	00000000 opb_r2
+00000cd8 l       .text	00000000 opb_r3
+00000ce8 l       .text	00000000 opb_r4
+00000cf8 l       .text	00000000 opb_r5
+00000d08 l       .text	00000000 opb_r6
+00000d18 l       .text	00000000 opb_r7
+00000d28 l       .text	00000000 opb_r8
+00000d38 l       .text	00000000 opb_r9
+00000d48 l       .text	00000000 opb_r10
+00000d58 l       .text	00000000 opb_r11
+00000d68 l       .text	00000000 opb_r12
+00000d78 l       .text	00000000 opb_r13
+00000d88 l       .text	00000000 opb_r14
+00000d94 l       .text	00000000 opb_r15
+00000da0 l       .text	00000000 opb_r16
+00000dac l       .text	00000000 opb_r17
+00000db8 l       .text	00000000 opb_r18
+00000dc8 l       .text	00000000 opb_r19
+00000dd8 l       .text	00000000 opb_r20
+00000de8 l       .text	00000000 opb_r21
+00000df8 l       .text	00000000 opb_r22
+00000e08 l       .text	00000000 opb_r23
+00000e18 l       .text	00000000 opb_r24
+00000e28 l       .text	00000000 opb_r25
+00000e38 l       .text	00000000 opb_r26
+00000e48 l       .text	00000000 opb_r27
+00000e58 l       .text	00000000 opb_r28
+00000e68 l       .text	00000000 opb_r29
+00000e78 l       .text	00000000 opb_r30
+00000e88 l       .text	00000000 opb_r31
+00000000 l    df *ABS*	00000000 crtend.o
+0000125c l     O .ctors	00000000 __CTOR_END__
+00001134 l       .text	00000000 __do_global_ctors_aux
+00000000 l    df *ABS*	00000000 lib_a-impure.o
+00001438 l     O .data	000000f0 impure_data
+00000f38 g     F .text	00000014 microblaze_register_handler(void (*)(void*), void*)
+00001258 g       .ctors	00000000 ___CTORS_LIST___
+00001180 g     F .text	0000004c print
+00001528 g     O .data	00000008 MB_InterruptVectorTable
+0000043c g     F .text	00000024 enable_caches
+00001530 g       .sbss	00000000 __sbss_start
+00001530 g     O .data	00000000 .hidden __TMC_END__
+00001530 g       .sdata	00000000 __sdata_start
+00001264 g     O .dtors	00000000 .hidden __DTOR_END__
+000004a8 g     F .text	0000003c init_platform
+000013e0 g       .rodata	00000000 __rodata_end
+00000e98 g       .text	000000a0 __interrupt_handler()
+000013e0 g       .sdata2	00000000 __sbss2_end
+00000484 g     F .text	00000024 init_uart
+000013a0 g       .drvcfg_sec	00000000 __drvcfgsecdata_size
+000002cc g     F .text	00000000 _crtinit
+000013e8 g       .data	00000000 mb_fpex_op_a
+00001950 g       .heap	00000000 _heap_end
+000013dc g     O .rodata	00000004 _global_impure_ptr
+00001550 g       .bss	00000000 __bss_end
+00001530 g       .sbss	00000000 __tbss_start
+000011fc g       .init	00000000 __init
+00001550 g       .heap	00000000 _heap_start
+00001530 g       .sbss	00000000 __sbss_end
+000011cc g     F .text	00000008 XNullHandler
+00001268 g     O .drvcfg_sec	00000138 XMicroblaze_ConfigTable
+00001258 g       .ctors	00000000 __CTOR_LIST__
+000013e0 g       .sdata2	00000000 __sbss2_start
+00001268 g       .drvcfg_sec	00000000 __drvcfgsecdata_start
+00000f8c g     F .text	00000194 __call_exitprocs
+00000000 g     F .vectors.reset	00000000 _start
+000013a0 g       .rodata	00000000 __rodata_start
+00001530 g       *ABS*	00000000 _SDA_BASE_
+00001530 g       .data	00000000 __data_end
+00001120  w    F .text	00000000 _exception_handler
+000011d4 g     F .text	00000028 outbyte
+00001530 g       .bss	00000000 __bss_start
+00000400 g       *ABS*	00000000 _STACK_SIZE
+00001530 g       .sbss	00000000 __tdata_start
+00001530 g       .sbss	00000000 __tdata_end
+000003bc g     F .text	00000080 main
+00000400 g       *ABS*	00000000 _HEAP_SIZE
+00000460 g     F .text	00000024 disable_caches
+00000050 g     F .text	00000000 _start1
+00001950 g       .stack	00000000 _stack_end
+00001530 g       .sdata	00000000 __sdata_end
+000013e0 g       .sdata2	00000000 __sdata2_start
+00001260 g       .ctors	00000000 __CTOR_END__
+00001260 g       .dtors	00000000 ___DTORS_LIST___
+00001260 g       .dtors	00000000 __DTOR_LIST__
+00001238 g       .fini	00000000 __fini
+00001434 g     O .data	00000004 _impure_ptr
+000013e0 g       .sdata2	00000000 __sdata2_end
+00000e98 g       .text	00000000 _interrupt_handler
+00001260 g       .ctors	00000000 ___CTORS_END___
+000013a0 g       .drvcfg_sec	00000000 __drvcfgsecdata_end
+00001d50 g       .stack	00000000 __stack
+00001d50 g       .stack	00000000 _end
+000004e4 g     F .text	00000034 cleanup_platform
+00001550 g       .heap	00000000 _heap
+00000f4c g     F .text	00000040 exit
+00000520 g     F .text	00000000 _hw_exception_handler
+00001530 g       .sbss	00000000 __tbss_end
+000013f4 g       .data	00000000 MB_ExceptionVectorTable
+0000112c g       .text	00000000 _program_init
+00000080 g     F .text	00000000 _exit
+000013ec g       .data	00000000 mb_fpex_op_b
+00001d50 g       .stack	00000000 _stack
+000013e0 g       .data	00000000 __data_start
+00001124 g       .text	00000000 _program_clean
+000013e0 g       *ABS*	00000000 _SDA2_BASE_
+
+
+
+Disassembly of section .vectors.reset:
+
+00000000 <_start>:
+*
+******************************************************************************/
+void Xil_Assert(const char8 *File, s32 Line)
+{
+	/* if the callback has been set then invoke it */
+	if (Xil_AssertCallbackRoutine != 0) {
+   0:	b0000000 	imm	0
+   4:	b8080050 	brai	80	// 50 <_start1>
+
+Disassembly of section .vectors.sw_exception:
+
+00000008 <_vector_sw_exception>:
+   8:	b0000000 	imm	0
+   c:	b8081120 	brai	4384	// 1120 <_exception_handler>
+
+Disassembly of section .vectors.interrupt:
+
+00000010 <_vector_interrupt>:
+{
+  10:	b0000000 	imm	0
+  14:	b8080e98 	brai	3736	// e98 <__interrupt_handler()>
+
+Disassembly of section .vectors.hw_exception:
+
+00000020 <_vector_hw_exception>:
+	}
+
+	/* if specified, wait indefinitely such that the assert will show up
+	 * in testing
+	 */
+	while (Xil_AssertWait != 0) {
+  20:	b0000000 	imm	0
+  24:	b8080520 	brai	1312	// 520 <_hw_exception_handler>
+
+Disassembly of section .text:
+
+00000050 <_start1>:
+      50:	b0000000 	imm	0
+      54:	31a01530 	addik	r13, r0, 5424	// 1530 <__TMC_END__>
+      58:	b0000000 	imm	0
+      5c:	304013e0 	addik	r2, r0, 5088	// 13e0 <_SDA2_BASE_>
+      60:	b0000000 	imm	0
+      64:	30201d30 	addik	r1, r0, 7472
+      68:	b0000000 	imm	0
+      6c:	b9f40260 	brlid	r15, 608	// 2cc <_crtinit>
+      70:	80000000 	or	r0, r0, r0
+      74:	b0000000 	imm	0
+      78:	b9f40ed4 	brlid	r15, 3796	// f4c <exit>
+      7c:	30a30000 	addik	r5, r3, 0
+
+00000080 <_exit>:
+      80:	b8000000 	bri	0	// 80 <_exit>
+
+00000084 <deregister_tm_clones>:
+      84:	b0000000 	imm	0
+      88:	30a01530 	addik	r5, r0, 5424	// 1530 <__TMC_END__>
+      8c:	b0000000 	imm	0
+      90:	30601530 	addik	r3, r0, 5424	// 1530 <__TMC_END__>
+      94:	88632800 	xor	r3, r3, r5
+      98:	bc03002c 	beqi	r3, 44		// c4
+      9c:	b0000000 	imm	0
+      a0:	30600000 	addik	r3, r0, 0
+      a4:	bc030020 	beqi	r3, 32		// c4
+      a8:	3021ffe4 	addik	r1, r1, -28
+      ac:	f9e10000 	swi	r15, r1, 0
+      b0:	99fc1800 	brald	r15, r3
+      b4:	80000000 	or	r0, r0, r0
+      b8:	e9e10000 	lwi	r15, r1, 0
+      bc:	b60f0008 	rtsd	r15, 8
+      c0:	3021001c 	addik	r1, r1, 28
+      c4:	b60f0008 	rtsd	r15, 8
+      c8:	80000000 	or	r0, r0, r0
+
+000000cc <register_tm_clones>:
+      cc:	b0000000 	imm	0
+      d0:	30a01530 	addik	r5, r0, 5424	// 1530 <__TMC_END__>
+      d4:	b0000000 	imm	0
+      d8:	30601530 	addik	r3, r0, 5424	// 1530 <__TMC_END__>
+      dc:	14651800 	rsubk	r3, r5, r3
+      e0:	10801800 	addk	r4, r0, r3
+      e4:	90830001 	sra	r4, r3
+      e8:	90840001 	sra	r4, r4
+      ec:	10c01800 	addk	r6, r0, r3
+      f0:	90c30041 	srl	r6, r3
+      f4:	90c60041 	srl	r6, r6
+      f8:	90c60041 	srl	r6, r6
+      fc:	90c60041 	srl	r6, r6
+     100:	90c60041 	srl	r6, r6
+     104:	90c60041 	srl	r6, r6
+     108:	90c60041 	srl	r6, r6
+     10c:	90c60041 	srl	r6, r6
+     110:	90c60041 	srl	r6, r6
+     114:	90c60041 	srl	r6, r6
+     118:	90c60041 	srl	r6, r6
+     11c:	90c60041 	srl	r6, r6
+     120:	90c60041 	srl	r6, r6
+     124:	90c60041 	srl	r6, r6
+     128:	90c60041 	srl	r6, r6
+     12c:	90c60041 	srl	r6, r6
+     130:	90c60041 	srl	r6, r6
+     134:	90c60041 	srl	r6, r6
+     138:	90c60041 	srl	r6, r6
+     13c:	90c60041 	srl	r6, r6
+     140:	90c60041 	srl	r6, r6
+     144:	90c60041 	srl	r6, r6
+     148:	90c60041 	srl	r6, r6
+     14c:	90c60041 	srl	r6, r6
+     150:	90c60041 	srl	r6, r6
+     154:	90c60041 	srl	r6, r6
+     158:	90c60041 	srl	r6, r6
+     15c:	90c60041 	srl	r6, r6
+     160:	90c60041 	srl	r6, r6
+     164:	90c60041 	srl	r6, r6
+     168:	90c60041 	srl	r6, r6
+     16c:	10c62000 	addk	r6, r6, r4
+     170:	90c60001 	sra	r6, r6
+     174:	bc06002c 	beqi	r6, 44		// 1a0
+     178:	b0000000 	imm	0
+     17c:	30600000 	addik	r3, r0, 0
+     180:	bc030020 	beqi	r3, 32		// 1a0
+     184:	3021ffe4 	addik	r1, r1, -28
+     188:	f9e10000 	swi	r15, r1, 0
+     18c:	99fc1800 	brald	r15, r3
+     190:	80000000 	or	r0, r0, r0
+     194:	e9e10000 	lwi	r15, r1, 0
+     198:	b60f0008 	rtsd	r15, 8
+     19c:	3021001c 	addik	r1, r1, 28
+     1a0:	b60f0008 	rtsd	r15, 8
+     1a4:	80000000 	or	r0, r0, r0
+
+000001a8 <__do_global_dtors_aux>:
+     1a8:	b0000000 	imm	0
+     1ac:	e0601530 	lbui	r3, r0, 5424	// 1530 <__TMC_END__>
+     1b0:	bc2300d0 	bnei	r3, 208		// 280
+     1b4:	b0000000 	imm	0
+     1b8:	30801264 	addik	r4, r0, 4708	// 1264 <__DTOR_END__>
+     1bc:	b0000000 	imm	0
+     1c0:	30a01260 	addik	r5, r0, 4704	// 1260 <__DTOR_LIST__>
+     1c4:	b0000000 	imm	0
+     1c8:	e8601534 	lwi	r3, r0, 5428	// 1534 <dtor_idx.1>
+     1cc:	3021ffdc 	addik	r1, r1, -36
+     1d0:	14852000 	rsubk	r4, r5, r4
+     1d4:	fa61001c 	swi	r19, r1, 28
+     1d8:	fac10020 	swi	r22, r1, 32
+     1dc:	12602000 	addk	r19, r0, r4
+     1e0:	92640001 	sra	r19, r4
+     1e4:	92730001 	sra	r19, r19
+     1e8:	f9e10000 	swi	r15, r1, 0
+     1ec:	3273ffff 	addik	r19, r19, -1
+     1f0:	b0000000 	imm	0
+     1f4:	32c01260 	addik	r22, r0, 4704	// 1260 <__DTOR_LIST__>
+     1f8:	16531803 	cmpu	r18, r19, r3
+     1fc:	beb20038 	bgeid	r18, 56		// 234
+     200:	30630001 	addik	r3, r3, 1
+     204:	10831800 	addk	r4, r3, r3
+     208:	10842000 	addk	r4, r4, r4
+     20c:	c884b000 	lw	r4, r4, r22
+     210:	b0000000 	imm	0
+     214:	f8601534 	swi	r3, r0, 5428	// 1534 <dtor_idx.1>
+     218:	99fc2000 	brald	r15, r4
+     21c:	80000000 	or	r0, r0, r0
+     220:	b0000000 	imm	0
+     224:	e8601534 	lwi	r3, r0, 5428	// 1534 <dtor_idx.1>
+     228:	16531803 	cmpu	r18, r19, r3
+     22c:	be52ffd8 	bltid	r18, -40		// 204
+     230:	30630001 	addik	r3, r3, 1
+     234:	b9f4fe50 	brlid	r15, -432	// 84 <deregister_tm_clones>
+     238:	80000000 	or	r0, r0, r0
+     23c:	b0000000 	imm	0
+     240:	30600000 	addik	r3, r0, 0
+     244:	be030020 	beqid	r3, 32		// 264
+     248:	e9e10000 	lwi	r15, r1, 0
+     24c:	b0000000 	imm	0
+     250:	30a01530 	addik	r5, r0, 5424	// 1530 <__TMC_END__>
+     254:	b000ffff 	imm	-1
+     258:	b9f4fda8 	brlid	r15, -600	// 0 <_start>
+     25c:	80000000 	or	r0, r0, r0
+     260:	e9e10000 	lwi	r15, r1, 0
+     264:	ea61001c 	lwi	r19, r1, 28
+     268:	eac10020 	lwi	r22, r1, 32
+     26c:	30600001 	addik	r3, r0, 1
+     270:	b0000000 	imm	0
+     274:	f0601530 	sbi	r3, r0, 5424	// 1530 <__TMC_END__>
+     278:	b60f0008 	rtsd	r15, 8
+     27c:	30210024 	addik	r1, r1, 36
+     280:	b60f0008 	rtsd	r15, 8
+     284:	80000000 	or	r0, r0, r0
+
+00000288 <frame_dummy>:
+     288:	b0000000 	imm	0
+     28c:	30600000 	addik	r3, r0, 0
+     290:	3021ffe4 	addik	r1, r1, -28
+     294:	be030024 	beqid	r3, 36		// 2b8
+     298:	f9e10000 	swi	r15, r1, 0
+     29c:	b0000000 	imm	0
+     2a0:	30c01538 	addik	r6, r0, 5432	// 1538 <object.0>
+     2a4:	b0000000 	imm	0
+     2a8:	30a01530 	addik	r5, r0, 5424	// 1530 <__TMC_END__>
+     2ac:	b000ffff 	imm	-1
+     2b0:	b9f4fd50 	brlid	r15, -688	// 0 <_start>
+     2b4:	80000000 	or	r0, r0, r0
+     2b8:	b9f4fe14 	brlid	r15, -492	// cc <register_tm_clones>
+     2bc:	80000000 	or	r0, r0, r0
+     2c0:	e9e10000 	lwi	r15, r1, 0
+     2c4:	b60f0008 	rtsd	r15, 8
+     2c8:	3021001c 	addik	r1, r1, 28
+
+000002cc <_crtinit>:
+     2cc:	2021ffd8 	addi	r1, r1, -40
+     2d0:	f9e10000 	swi	r15, r1, 0
+     2d4:	b0000000 	imm	0
+     2d8:	20c01530 	addi	r6, r0, 5424	// 1530 <__TMC_END__>
+     2dc:	b0000000 	imm	0
+     2e0:	20e01530 	addi	r7, r0, 5424	// 1530 <__TMC_END__>
+     2e4:	06463800 	rsub	r18, r6, r7
+     2e8:	bc720014 	blei	r18, 20		// 2fc
+     2ec:	f8060000 	swi	r0, r6, 0
+     2f0:	20c60004 	addi	r6, r6, 4
+     2f4:	06463800 	rsub	r18, r6, r7
+     2f8:	bc92fff4 	bgti	r18, -12		// 2ec
+     2fc:	b0000000 	imm	0
+     300:	20c01530 	addi	r6, r0, 5424	// 1530 <__TMC_END__>
+     304:	b0000000 	imm	0
+     308:	20e01550 	addi	r7, r0, 5456	// 1550 <__bss_end>
+     30c:	06463800 	rsub	r18, r6, r7
+     310:	bc720014 	blei	r18, 20		// 324
+     314:	f8060000 	swi	r0, r6, 0
+     318:	20c60004 	addi	r6, r6, 4
+     31c:	06463800 	rsub	r18, r6, r7
+     320:	bc92fff4 	bgti	r18, -12		// 314
+     324:	b0000000 	imm	0
+     328:	b9f40e04 	brlid	r15, 3588	// 112c <_program_init>
+     32c:	80000000 	or	r0, r0, r0
+     330:	b0000000 	imm	0
+     334:	b9f40ec8 	brlid	r15, 3784	// 11fc <__init>
+     338:	80000000 	or	r0, r0, r0
+     33c:	20c00000 	addi	r6, r0, 0
+     340:	20e00000 	addi	r7, r0, 0
+     344:	b0000000 	imm	0
+     348:	b9f40074 	brlid	r15, 116	// 3bc <main>
+     34c:	20a00000 	addi	r5, r0, 0
+     350:	32630000 	addik	r19, r3, 0
+     354:	b0000000 	imm	0
+     358:	b9f40ee0 	brlid	r15, 3808	// 1238 <__fini>
+     35c:	80000000 	or	r0, r0, r0
+     360:	b0000000 	imm	0
+     364:	b9f40dc0 	brlid	r15, 3520	// 1124 <_program_clean>
+     368:	80000000 	or	r0, r0, r0
+     36c:	c9e10000 	lw	r15, r1, r0
+     370:	30730000 	addik	r3, r19, 0
+     374:	b60f0008 	rtsd	r15, 8
+     378:	20210028 	addi	r1, r1, 40
+
+0000037c <Xil_Out32>:
+*
+* @return	None.
+*
+******************************************************************************/
+static INLINE void Xil_Out32(UINTPTR Addr, u32 Value)
+{
+     37c:	3021ffec 	addik	r1, r1, -20
+     380:	fa610010 	swi	r19, r1, 16
+     384:	12610000 	addk	r19, r1, r0
+     388:	f8b30008 	swi	r5, r19, 8
+     38c:	f8d3000c 	swi	r6, r19, 12
+	/* write 32 bit value to specified address */
+#ifndef ENABLE_SAFETY
+	volatile u32 *LocalAddr = (volatile u32 *)Addr;
+     390:	e8730008 	lwi	r3, r19, 8
+     394:	f8730004 	swi	r3, r19, 4
+	*LocalAddr = Value;
+     398:	e8730004 	lwi	r3, r19, 4
+     39c:	e893000c 	lwi	r4, r19, 12
+     3a0:	f8830000 	swi	r4, r3, 0
+#else
+	XStl_RegUpdate(Addr, Value);
+#endif
+}
+     3a4:	80000000 	or	r0, r0, r0
+     3a8:	10330000 	addk	r1, r19, r0
+     3ac:	ea610010 	lwi	r19, r1, 16
+     3b0:	30210014 	addik	r1, r1, 20
+     3b4:	b60f0008 	rtsd	r15, 8
+     3b8:	80000000 	or	r0, r0, r0
+
+000003bc <main>:
+#include "xil_printf.h"
+#include "xparameters.h"
+#include "xgpio_l.h"
+
+int main()
+{
+     3bc:	3021ffe0 	addik	r1, r1, -32
+     3c0:	f9e10000 	swi	r15, r1, 0
+     3c4:	fa61001c 	swi	r19, r1, 28
+     3c8:	12610000 	addk	r19, r1, r0
+    init_platform();
+     3cc:	b0000000 	imm	0
+     3d0:	b9f400d8 	brlid	r15, 216	// 4a8 <init_platform>
+     3d4:	80000000 	or	r0, r0, r0
+
+    print("Hello World\n\r");
+     3d8:	b0000000 	imm	0
+     3dc:	30a013a0 	addik	r5, r0, 5024	// 13a0 <__drvcfgsecdata_end>
+     3e0:	b0000000 	imm	0
+     3e4:	b9f40d9c 	brlid	r15, 3484	// 1180 <print>
+     3e8:	80000000 	or	r0, r0, r0
+    print("Successfully ran Hello World application");
+     3ec:	b0000000 	imm	0
+     3f0:	30a013b0 	addik	r5, r0, 5040
+     3f4:	b0000000 	imm	0
+     3f8:	b9f40d88 	brlid	r15, 3464	// 1180 <print>
+     3fc:	80000000 	or	r0, r0, r0
+  
+    XGpio_WriteReg(XPAR_DIPS_AND_LEDS_BASEADDR, XGPIO_DATA2_OFFSET, 0x02);
+     400:	30c00002 	addik	r6, r0, 2
+     404:	b0004000 	imm	16384
+     408:	30a00008 	addik	r5, r0, 8
+     40c:	b9f4ff70 	brlid	r15, -144	// 37c <Xil_Out32>
+     410:	80000000 	or	r0, r0, r0
+    cleanup_platform();
+     414:	b0000000 	imm	0
+     418:	b9f400cc 	brlid	r15, 204	// 4e4 <cleanup_platform>
+     41c:	80000000 	or	r0, r0, r0
+    return 0;
+     420:	10600000 	addk	r3, r0, r0
+}
+     424:	e9e10000 	lwi	r15, r1, 0
+     428:	10330000 	addk	r1, r19, r0
+     42c:	ea61001c 	lwi	r19, r1, 28
+     430:	30210020 	addik	r1, r1, 32
+     434:	b60f0008 	rtsd	r15, 8
+     438:	80000000 	or	r0, r0, r0
+
+0000043c <enable_caches>:
+ #define UART_BAUD 9600
+#endif
+
+void
+enable_caches()
+{
+     43c:	3021fff8 	addik	r1, r1, -8
+     440:	fa610004 	swi	r19, r1, 4
+     444:	12610000 	addk	r19, r1, r0
+#endif
+#ifdef XPAR_MICROBLAZE_USE_DCACHE
+    Xil_DCacheEnable();
+#endif
+#endif
+}
+     448:	80000000 	or	r0, r0, r0
+     44c:	10330000 	addk	r1, r19, r0
+     450:	ea610004 	lwi	r19, r1, 4
+     454:	30210008 	addik	r1, r1, 8
+     458:	b60f0008 	rtsd	r15, 8
+     45c:	80000000 	or	r0, r0, r0
+
+00000460 <disable_caches>:
+
+void
+disable_caches()
+{
+     460:	3021fff8 	addik	r1, r1, -8
+     464:	fa610004 	swi	r19, r1, 4
+     468:	12610000 	addk	r19, r1, r0
+#endif
+#ifdef XPAR_MICROBLAZE_USE_ICACHE
+    Xil_ICacheDisable();
+#endif
+#endif
+}
+     46c:	80000000 	or	r0, r0, r0
+     470:	10330000 	addk	r1, r19, r0
+     474:	ea610004 	lwi	r19, r1, 4
+     478:	30210008 	addik	r1, r1, 8
+     47c:	b60f0008 	rtsd	r15, 8
+     480:	80000000 	or	r0, r0, r0
+
+00000484 <init_uart>:
+
+void
+init_uart()
+{
+     484:	3021fff8 	addik	r1, r1, -8
+     488:	fa610004 	swi	r19, r1, 4
+     48c:	12610000 	addk	r19, r1, r0
+#ifdef STDOUT_IS_16550
+    XUartNs550_SetBaud(STDOUT_BASEADDR, XPAR_XUARTNS550_CLOCK_HZ, UART_BAUD);
+    XUartNs550_SetLineControlReg(STDOUT_BASEADDR, XUN_LCR_8_DATA_BITS);
+#endif
+    /* Bootrom/BSP configures PS7/PSU UART to 115200 bps */
+}
+     490:	80000000 	or	r0, r0, r0
+     494:	10330000 	addk	r1, r19, r0
+     498:	ea610004 	lwi	r19, r1, 4
+     49c:	30210008 	addik	r1, r1, 8
+     4a0:	b60f0008 	rtsd	r15, 8
+     4a4:	80000000 	or	r0, r0, r0
+
+000004a8 <init_platform>:
+
+void
+init_platform()
+{
+     4a8:	3021ffe0 	addik	r1, r1, -32
+     4ac:	f9e10000 	swi	r15, r1, 0
+     4b0:	fa61001c 	swi	r19, r1, 28
+     4b4:	12610000 	addk	r19, r1, r0
+     * Make sure that the ps7/psu_init.c and ps7/psu_init.h files are included
+     * along with this example source files for compilation.
+     */
+    /* ps7_init();*/
+    /* psu_init();*/
+    enable_caches();
+     4b8:	b9f4ff84 	brlid	r15, -124	// 43c <enable_caches>
+     4bc:	80000000 	or	r0, r0, r0
+    init_uart();
+     4c0:	b9f4ffc4 	brlid	r15, -60	// 484 <init_uart>
+     4c4:	80000000 	or	r0, r0, r0
+}
+     4c8:	80000000 	or	r0, r0, r0
+     4cc:	e9e10000 	lwi	r15, r1, 0
+     4d0:	10330000 	addk	r1, r19, r0
+     4d4:	ea61001c 	lwi	r19, r1, 28
+     4d8:	30210020 	addik	r1, r1, 32
+     4dc:	b60f0008 	rtsd	r15, 8
+     4e0:	80000000 	or	r0, r0, r0
+
+000004e4 <cleanup_platform>:
+
+void
+cleanup_platform()
+{
+     4e4:	3021ffe0 	addik	r1, r1, -32
+     4e8:	f9e10000 	swi	r15, r1, 0
+     4ec:	fa61001c 	swi	r19, r1, 28
+     4f0:	12610000 	addk	r19, r1, r0
+    disable_caches();
+     4f4:	b9f4ff6c 	brlid	r15, -148	// 460 <disable_caches>
+     4f8:	80000000 	or	r0, r0, r0
+}
+     4fc:	80000000 	or	r0, r0, r0
+     500:	e9e10000 	lwi	r15, r1, 0
+     504:	10330000 	addk	r1, r19, r0
+     508:	ea61001c 	lwi	r19, r1, 28
+     50c:	30210020 	addik	r1, r1, 32
+     510:	b60f0008 	rtsd	r15, 8
+     514:	80000000 	or	r0, r0, r0
+	...
+
+00000520 <_hw_exception_handler>:
+     520:	b0000000 	imm	0
+.align 2
+.ent _hw_exception_handler
+.type _hw_exception_handler, @function
+_hw_exception_handler:
+#ifdef SDT
+	addi r3, r0, XMicroblaze_ConfigTable			/* get base address of structure */
+     524:	20601268 	addi	r3, r0, 4712	// 1268 <XMicroblaze_ConfigTable>
+	lbui r7, r3, USE_STACK_PROTECTION_OFFSET		/* Check if stack protection is enabled */
+     528:	e0e3001c 	lbui	r7, r3, 28
+	bnei r7, check_sp_exception
+     52c:	bc270008 	bnei	r7, 8	// 534 <check_sp_exception>
+	BRI ex_handler_sp_exception_disabled;
+     530:	b8000028 	bri	40	// 558 <ex_handler_sp_exception_disabled>
+
+00000534 <check_sp_exception>:
+     534:	b0000000 	imm	0
+
+check_sp_exception:
+	SI	r3, r0, mb_sp_save_r3;			/* Save temporary register                 */
+     538:	f86013f0 	swi	r3, r0, 5104	// 13f0 <mb_sp_save_r3>
+	mfs	r3, resr;				/* Extract ESR[DS]                         */
+     53c:	94608005 	mfs	r3, resr
+	andi	r3, r3, ESR_EXC_MASK;
+     540:	a463001f 	andi	r3, r3, 31
+	xori	r3, r3, 0x7;				/* Check for stack protection violation    */
+     544:	a8630007 	xori	r3, r3, 7
+	BNEI	r3, ex_handler_not_sp_violation;
+     548:	bc230008 	bnei	r3, 8	// 550 <ex_handler_not_sp_violation>
+
+0000054c <ex_handler_sp_violation>:
+ex_handler_sp_violation:
+	bri	0;					/* Halt here if stack protection violation */
+     54c:	b8000000 	bri	0	// 54c <ex_handler_sp_violation>
+
+00000550 <ex_handler_not_sp_violation>:
+     550:	b0000000 	imm	0
+ex_handler_not_sp_violation:
+	LI	r3, r0, mb_sp_save_r3;			/* Restore temporary register              */
+     554:	e86013f0 	lwi	r3, r0, 5104	// 13f0 <mb_sp_save_r3>
+
+00000558 <ex_handler_sp_exception_disabled>:
+ex_handler_not_sp_violation:
+	LI	r3, r0, mb_sp_save_r3;			/* Restore temporary register              */
+#endif /* defined(XPAR_MICROBLAZE_USE_STACK_PROTECTION) && (XPAR_MICROBLAZE_USE_STACK_PROTECTION == 1) */
+
+ex_handler_sp_exception_disabled:
+        ADDIK   r1, r1, -(EX_HANDLER_STACK_SIZ);        /* Create stack frame */
+     558:	3021ffac 	addik	r1, r1, -84
+        PUSH_REG(3);
+     55c:	f8610010 	swi	r3, r1, 16
+        PUSH_REG(4);
+     560:	f8810014 	swi	r4, r1, 20
+        PUSH_REG(5);
+     564:	f8a10018 	swi	r5, r1, 24
+        PUSH_REG(6);
+     568:	f8c1001c 	swi	r6, r1, 28
+     56c:	b0000000 	imm	0
+        andi    r6, r6, ESR_DS_MASK;
+        BEQI    r6, ex_handler_no_ds;
+        mfs     r17, rbtr;
+#endif
+#ifdef SDT
+	addi r3, r0, XMicroblaze_ConfigTable
+     570:	20601268 	addi	r3, r0, 4712	// 1268 <XMicroblaze_ConfigTable>
+	lbui r7, r3, EXCEPTIONS_IN_DELAY_SLOTS_OFFSET
+     574:	e0e30020 	lbui	r7, r3, 32
+	bnei r7, ex_handler_ds
+     578:	bc270008 	bnei	r7, 8	// 580 <ex_handler_ds>
+	BRI ex_handler_no_ds;
+     57c:	b8000014 	bri	20	// 590 <ex_handler_no_ds>
+
+00000580 <ex_handler_ds>:
+
+ex_handler_ds:
+        mfs     r6, resr;
+     580:	94c08005 	mfs	r6, resr
+        andi    r6, r6, ESR_DS_MASK;
+     584:	a4c61000 	andi	r6, r6, 4096
+        BEQI    r6, ex_handler_no_ds;
+     588:	bc060008 	beqi	r6, 8	// 590 <ex_handler_no_ds>
+        mfs     r17, rbtr;
+     58c:	9620800b 	mfs	r17, rbtr
+
+00000590 <ex_handler_no_ds>:
+#endif
+ex_handler_no_ds:
+        PUSH_R17;
+     590:	fa210000 	swi	r17, r1, 0
+        PUSH_MSR_AND_ENABLE_EXC;                        /* Exceptions enabled here. This will allow nested exceptions */
+     594:	94a08001 	mfs	r5, rmsr
+     598:	f8a10050 	swi	r5, r1, 80
+     59c:	a0a50100 	ori	r5, r5, 256
+     5a0:	9405c001 	mts	rmsr, r5
+
+        mfs     r3, resr;
+     5a4:	94608005 	mfs	r3, resr
+        andi    r5, r3, ESR_EXC_MASK;                   /* Extract ESR[EXC]                     */
+     5a8:	a4a3001f 	andi	r5, r3, 31
+#ifndef NO_UNALIGNED_EXCEPTIONS
+        xori    r6, r5, 1;                              /* 00001 = Unaligned Exception          */
+     5ac:	a8c50001 	xori	r6, r5, 1
+        BNEI    r6, handle_ex_regular;
+     5b0:	bc260020 	bnei	r6, 32	// 5d0 <handle_ex_regular>
+     5b4:	b0000000 	imm	0
+
+        ADDIK   r4, r0, MB_ExceptionVectorTable;        /* Check if user has registered an unaligned exception handler */
+     5b8:	308013f4 	addik	r4, r0, 5108	// 13f4 <MB_ExceptionVectorTable>
+#if defined (__arch64__)
+        LI      r4, r4, 16;
+#else
+        LI      r4, r4, 8;
+     5bc:	e8840008 	lwi	r4, r4, 8
+     5c0:	b0000000 	imm	0
+#endif
+        ADDIK   r6, r0, XNullHandler;                   /* If exceptionvectortable entry is still XNullHandler, use */
+     5c4:	30c011cc 	addik	r6, r0, 4556	// 11cc <XNullHandler>
+        XOR     r6, r4, r6;                             /* the default exception handler */
+     5c8:	88c43000 	xor	r6, r4, r6
+        BEQI    r6, handle_unaligned_ex ;
+     5cc:	bc0600e8 	beqi	r6, 232	// 6b4 <handle_unaligned_ex>
+
+000005d0 <handle_ex_regular>:
+     5d0:	b0000000 	imm	0
+
+handle_ex_regular:
+#endif  /* ! NO_UNALIGNED_EXCEPTIONS */
+#ifdef SDT
+	addi r3, r0, XMicroblaze_ConfigTable
+     5d4:	20601268 	addi	r3, r0, 4712	// 1268 <XMicroblaze_ConfigTable>
+	lbui r7, r3, UNALIGNED_EXCEPTION_OFFSET
+     5d8:	e0e30000 	lbui	r7, r3, 0
+	bnei r7, ex_handler_unaligned
+     5dc:	bc270008 	bnei	r7, 8	// 5e4 <ex_handler_unaligned>
+	BRI handle_ex_regular_sdt;
+     5e0:	b8000028 	bri	40	// 608 <handle_ex_regular_sdt>
+
+000005e4 <ex_handler_unaligned>:
+
+ex_handler_unaligned:
+        xori    r6, r5, 1;                              /* 00001 = Unaligned Exception          */
+     5e4:	a8c50001 	xori	r6, r5, 1
+        BNEI    r6, handle_ex_regular_sdt;
+     5e8:	bc260020 	bnei	r6, 32	// 608 <handle_ex_regular_sdt>
+     5ec:	b0000000 	imm	0
+
+        ADDIK   r4, r0, MB_ExceptionVectorTable;        /* Check if user has registered an unaligned exception handler */
+     5f0:	308013f4 	addik	r4, r0, 5108	// 13f4 <MB_ExceptionVectorTable>
+#if defined (__arch64__)
+        LI      r4, r4, 16;
+#else
+        LI      r4, r4, 8;
+     5f4:	e8840008 	lwi	r4, r4, 8
+     5f8:	b0000000 	imm	0
+#endif
+        ADDIK   r6, r0, XNullHandler;                   /* If exceptionvectortable entry is still XNullHandler, use */
+     5fc:	30c011cc 	addik	r6, r0, 4556	// 11cc <XNullHandler>
+        XOR     r6, r4, r6;                             /* the default exception handler */
+     600:	88c43000 	xor	r6, r4, r6
+        BEQI    r6, handle_unaligned_ex ;
+     604:	bc0600b0 	beqi	r6, 176	// 6b4 <handle_unaligned_ex>
+
+00000608 <handle_ex_regular_sdt>:
+     608:	b0000000 	imm	0
+
+handle_ex_regular_sdt:
+	addi r3, r0, XMicroblaze_ConfigTable;
+     60c:	20601268 	addi	r3, r0, 4712	// 1268 <XMicroblaze_ConfigTable>
+	lbui r7, r3, UNALIGNED_EXCEPTION_OFFSET;
+     610:	e0e30000 	lbui	r7, r3, 0
+	bnei r7, handle_fpu_exception;
+     614:	bc270008 	bnei	r7, 8	// 61c <handle_fpu_exception>
+	BRI handle_other_ex;
+     618:	b8000014 	bri	20	// 62c <handle_other_ex>
+
+0000061c <handle_fpu_exception>:
+handle_fpu_exception:
+	lbui r7, r3, PRECODE_FPU_EXCEPTION_OFFSET;
+     61c:	e0e30008 	lbui	r7, r3, 8
+	blei r7, handle_other_ex;
+     620:	bc67000c 	blei	r7, 12	// 62c <handle_other_ex>
+        xori   r6, r5, 6;                               /* 00110 = FPU exception */
+     624:	a8c50006 	xori	r6, r5, 6
+        BEQI   r6, handle_fp_ex;                        /* Go and decode the FP exception */
+     628:	bc0601d0 	beqi	r6, 464	// 7f8 <handle_fp_ex>
+
+0000062c <handle_other_ex>:
+        xori   r6, r5, 6;                               /* 00110 = FPU exception */
+        BEQI   r6, handle_fp_ex;                        /* Go and decode the FP exception */
+#endif  /* defined (MICROBLAZE_FP_EXCEPTION_ENABLED) && defined (MICROBLAZE_FP_EXCEPTION_DECODE) */
+
+handle_other_ex:                                        /* Handle Other exceptions here         */
+        ori     r6, r0, 20;
+     62c:	a0c00014 	ori	r6, r0, 20
+        cmp     r6, r5, r6;                             /* >= 20 are exceptions we do not handle. */
+     630:	14c53001 	cmp	r6, r5, r6
+        BLEI    r6, ex_handler_unhandled;
+     634:	bc660288 	blei	r6, 648	// 8bc <ex_handler_unhandled>
+
+        ori     r6, r0, 7;
+     638:	a0c00007 	ori	r6, r0, 7
+        cmp     r6, r5, r6;                             /* Convert MMU exception indices into an ordinal of 7 */
+     63c:	14c53001 	cmp	r6, r5, r6
+        BGTI    r6, handle_other_ex_tail;
+     640:	bc860008 	bgti	r6, 8	// 648 <handle_other_ex_tail>
+        ori     r5, r0, 0x7;
+     644:	a0a00007 	ori	r5, r0, 7
+
+00000648 <handle_other_ex_tail>:
+
+handle_other_ex_tail:
+        PUSH_REG(7);                                    /* Save other volatiles before we make procedure calls below   */
+     648:	f8e10020 	swi	r7, r1, 32
+        PUSH_REG(8);
+     64c:	f9010024 	swi	r8, r1, 36
+        PUSH_REG(9);
+     650:	f9210028 	swi	r9, r1, 40
+        PUSH_REG(10);
+     654:	f941002c 	swi	r10, r1, 44
+        PUSH_REG(11);
+     658:	f9610030 	swi	r11, r1, 48
+        PUSH_REG(12);
+     65c:	f9810034 	swi	r12, r1, 52
+        PUSH_REG(15);
+     660:	f9e10040 	swi	r15, r1, 64
+        PUSH_REG(18);
+     664:	fa41004c 	swi	r18, r1, 76
+     668:	b0000000 	imm	0
+
+        ADDIK   r4, r0, MB_ExceptionVectorTable;        /* Load the Exception vector table base address         */
+     66c:	308013f4 	addik	r4, r0, 5108	// 13f4 <MB_ExceptionVectorTable>
+        ADDK    r7, r5, r5;                             /* Calculate exception vector offset = r5 * 8 (32-bit)  */
+     670:	10e52800 	addk	r7, r5, r5
+        ADDK    r7, r7, r7;
+     674:	10e73800 	addk	r7, r7, r7
+        ADDK    r7, r7, r7;
+     678:	10e73800 	addk	r7, r7, r7
+#if defined (__arch64__)
+        ADDK    r7, r7, r7;                             /* or r5 * 16 (64-bit)  */
+#endif
+        ADDK    r7, r7, r4;                             /* Get pointer to exception vector               */
+     67c:	10e72000 	addk	r7, r7, r4
+        LI      r5, r7, REGSIZE;                        /* Load argument to exception handler from table */
+     680:	e8a70004 	lwi	r5, r7, 4
+        LOAD    r7, r7, r0;                             /* Load vector itself here                       */
+     684:	c8e70000 	lw	r7, r7, r0
+
+        brald   r15, r7;                                /* Branch to handler                             */
+     688:	99fc3800 	brald	r15, r7
+        nop;
+     68c:	80000000 	or	r0, r0, r0
+
+        POP_REG(7);                                     /* Restore other volatiles */
+     690:	e8e10020 	lwi	r7, r1, 32
+        POP_REG(8);
+     694:	e9010024 	lwi	r8, r1, 36
+        POP_REG(9);
+     698:	e9210028 	lwi	r9, r1, 40
+        POP_REG(10);
+     69c:	e941002c 	lwi	r10, r1, 44
+        POP_REG(11);
+     6a0:	e9610030 	lwi	r11, r1, 48
+        POP_REG(12);
+     6a4:	e9810034 	lwi	r12, r1, 52
+        POP_REG(15);
+     6a8:	e9e10040 	lwi	r15, r1, 64
+        POP_REG(18);
+     6ac:	ea41004c 	lwi	r18, r1, 76
+
+        BRI     ex_handler_done;                        /* Complete exception handling       */
+     6b0:	b80001e4 	bri	484	// 894 <ex_handler_done>
+
+000006b4 <handle_unaligned_ex>:
+
+#ifndef NO_UNALIGNED_EXCEPTIONS
+handle_unaligned_ex:
+        andi    r6, r3, ESR_REG_MASK;                   /* Mask and extract the register operand */
+     6b4:	a4c303e0 	andi	r6, r3, 992
+        srl     r6, r6;                                 /* r6 >> 5 */
+     6b8:	90c60041 	srl	r6, r6
+        srl     r6, r6;
+     6bc:	90c60041 	srl	r6, r6
+        srl     r6, r6;
+     6c0:	90c60041 	srl	r6, r6
+        srl     r6, r6;
+     6c4:	90c60041 	srl	r6, r6
+        srl     r6, r6;
+     6c8:	90c60041 	srl	r6, r6
+     6cc:	b0000000 	imm	0
+        sbi     r6, r0, ex_reg_op;                      /* Store the register operand in a temporary location */
+     6d0:	f0c013e4 	sbi	r6, r0, 5092	// 13e4 <ex_reg_op>
+        mfs     r4, rear;
+     6d4:	94808003 	mfs	r4, rear
+        andi    r6, r3, ESR_LW_SW_MASK;                 /* Extract ESR[S]               */
+     6d8:	a4c30400 	andi	r6, r3, 1024
+        BNEI    r6, ex_sw;
+     6dc:	bc26008c 	bnei	r6, 140	// 768 <ex_lw_end>
+
+000006e0 <ex_lw>:
+        sbi     r5, r0, ex_tmp_data_loc_7;
+        lli     r3, r0, ex_tmp_data_loc_0;              /* Get the destination register value into r3   */
+        BRI     ex_lw_tail;
+#endif
+ex_lw:
+        andi    r6, r3, ESR_WORD_MASK;                  /* Extract ESR[W]               */
+     6e0:	a4c30800 	andi	r6, r3, 2048
+        BEQI    r6, ex_lhw;
+     6e4:	bc060040 	beqi	r6, 64	// 724 <ex_lhw>
+        lbui    r5, r4, 0;                              /* Exception address in r4      */
+     6e8:	e0a40000 	lbui	r5, r4, 0
+     6ec:	b0000000 	imm	0
+        sbi     r5, r0, ex_tmp_data_loc_0;              /* Load a word, byte-by-byte from destination address and save it in tmp space  */
+     6f0:	f0a013e0 	sbi	r5, r0, 5088	// 13e0 <_SDA2_BASE_>
+        lbui    r5, r4, 1;
+     6f4:	e0a40001 	lbui	r5, r4, 1
+     6f8:	b0000000 	imm	0
+        sbi     r5, r0, ex_tmp_data_loc_1;
+     6fc:	f0a013e1 	sbi	r5, r0, 5089	// 13e1 <ex_tmp_data_loc_1>
+        lbui    r5, r4, 2;
+     700:	e0a40002 	lbui	r5, r4, 2
+     704:	b0000000 	imm	0
+        sbi     r5, r0, ex_tmp_data_loc_2;
+     708:	f0a013e2 	sbi	r5, r0, 5090	// 13e2 <ex_tmp_data_loc_2>
+        lbui    r5, r4, 3;
+     70c:	e0a40003 	lbui	r5, r4, 3
+     710:	b0000000 	imm	0
+        sbi     r5, r0, ex_tmp_data_loc_3;
+     714:	f0a013e3 	sbi	r5, r0, 5091	// 13e3 <ex_tmp_data_loc_3>
+     718:	b0000000 	imm	0
+        lwi     r3, r0, ex_tmp_data_loc_0;              /* Get the destination register value into r3   */
+     71c:	e86013e0 	lwi	r3, r0, 5088	// 13e0 <_SDA2_BASE_>
+        BRI     ex_lw_tail;
+     720:	b8000024 	bri	36	// 744 <ex_lw_tail>
+
+00000724 <ex_lhw>:
+ex_lhw:
+        lbui    r5, r4, 0;                              /* Exception address in r4                      */
+     724:	e0a40000 	lbui	r5, r4, 0
+     728:	b0000000 	imm	0
+        sbi     r5, r0, ex_tmp_data_loc_0;              /* Load a half-word, byte-by-byte from destination address and save it in tmp space */
+     72c:	f0a013e0 	sbi	r5, r0, 5088	// 13e0 <_SDA2_BASE_>
+        lbui    r5, r4, 1;
+     730:	e0a40001 	lbui	r5, r4, 1
+     734:	b0000000 	imm	0
+        sbi     r5, r0, ex_tmp_data_loc_1;
+     738:	f0a013e1 	sbi	r5, r0, 5089	// 13e1 <ex_tmp_data_loc_1>
+     73c:	b0000000 	imm	0
+        lhui    r3, r0, ex_tmp_data_loc_0;              /* Get the destination register value into r3   */
+     740:	e46013e0 	lhui	r3, r0, 5088	// 13e0 <_SDA2_BASE_>
+
+00000744 <ex_lw_tail>:
+     744:	b0000000 	imm	0
+ex_lw_tail:
+        lbui    r5, r0, ex_reg_op;                      /* Get the destination register number into r5  */
+     748:	e0a013e4 	lbui	r5, r0, 5092	// 13e4 <ex_reg_op>
+     74c:	b0000000 	imm	0
+        ADDIK   r6, r0, lw_table;                       /* Form load_word jump table offset (lw_table + (8 * regnum)) */
+     750:	30c008c0 	addik	r6, r0, 2240	// 8c0 <lw_r0>
+        ADDK    r5, r5, r5;
+     754:	10a52800 	addk	r5, r5, r5
+        ADDK    r5, r5, r5;
+     758:	10a52800 	addk	r5, r5, r5
+        ADDK    r5, r5, r5;
+     75c:	10a52800 	addk	r5, r5, r5
+        ADDK    r5, r5, r6;
+     760:	10a53000 	addk	r5, r5, r6
+        bra     r5;
+     764:	98082800 	bra	r5
+
+00000768 <ex_lw_end>:
+     768:	b0000000 	imm	0
+ex_lw_end:                                              /* Exception handling of load word, ends */
+ex_sw:
+        lbui    r5, r0, ex_reg_op;                      /* Get the destination register number into r5 */
+     76c:	e0a013e4 	lbui	r5, r0, 5092	// 13e4 <ex_reg_op>
+     770:	b0000000 	imm	0
+        ADDIK   r6, r0, sw_table;                       /* Form store_word jump table offset (sw_table + (8 * regnum)) */
+     774:	30c009c0 	addik	r6, r0, 2496	// 9c0 <sw_r0>
+        ADDK    r5, r5, r5;
+     778:	10a52800 	addk	r5, r5, r5
+        ADDK    r5, r5, r5;
+     77c:	10a52800 	addk	r5, r5, r5
+        ADDK    r5, r5, r5;
+     780:	10a52800 	addk	r5, r5, r5
+        ADDK    r5, r5, r6;
+     784:	10a53000 	addk	r5, r5, r6
+        bra     r5;
+     788:	98082800 	bra	r5
+
+0000078c <ex_sw_tail>:
+        lbui    r3, r0, ex_tmp_data_loc_7;
+        sbi     r3, r4, 7;
+        BRI     ex_handler_done;
+ex_not_sl:
+#endif
+        mfs     r6, resr;
+     78c:	94c08005 	mfs	r6, resr
+        andi    r6, r6, ESR_WORD_MASK;                  /* Extract ESR[W]       */
+     790:	a4c60800 	andi	r6, r6, 2048
+        BEQI    r6, ex_shw;
+     794:	bc060040 	beqi	r6, 64	// 7d4 <ex_shw>
+     798:	b0000000 	imm	0
+        swi     r3, r0, ex_tmp_data_loc_0;
+     79c:	f86013e0 	swi	r3, r0, 5088	// 13e0 <_SDA2_BASE_>
+     7a0:	b0000000 	imm	0
+        lbui    r3, r0, ex_tmp_data_loc_0;              /* Store the word, byte-by-byte into destination address                */
+     7a4:	e06013e0 	lbui	r3, r0, 5088	// 13e0 <_SDA2_BASE_>
+        sbi     r3, r4, 0;
+     7a8:	f0640000 	sbi	r3, r4, 0
+     7ac:	b0000000 	imm	0
+        lbui    r3, r0, ex_tmp_data_loc_1;
+     7b0:	e06013e1 	lbui	r3, r0, 5089	// 13e1 <ex_tmp_data_loc_1>
+        sbi     r3, r4, 1;
+     7b4:	f0640001 	sbi	r3, r4, 1
+     7b8:	b0000000 	imm	0
+        lbui    r3, r0, ex_tmp_data_loc_2;
+     7bc:	e06013e2 	lbui	r3, r0, 5090	// 13e2 <ex_tmp_data_loc_2>
+        sbi     r3, r4, 2;
+     7c0:	f0640002 	sbi	r3, r4, 2
+     7c4:	b0000000 	imm	0
+        lbui    r3, r0, ex_tmp_data_loc_3;
+     7c8:	e06013e3 	lbui	r3, r0, 5091	// 13e3 <ex_tmp_data_loc_3>
+        sbi     r3, r4, 3;
+     7cc:	f0640003 	sbi	r3, r4, 3
+        BRI     ex_handler_done;
+     7d0:	b80000c4 	bri	196	// 894 <ex_handler_done>
+
+000007d4 <ex_shw>:
+     7d4:	b0000000 	imm	0
+ex_shw:
+        swi     r3, r0, ex_tmp_data_loc_0;              /* Store the lower half-word, byte-by-byte into destination address      */
+     7d8:	f86013e0 	swi	r3, r0, 5088	// 13e0 <_SDA2_BASE_>
+     7dc:	b0000000 	imm	0
+
+#ifdef __LITTLE_ENDIAN__
+        lbui    r3, r0, ex_tmp_data_loc_0;
+     7e0:	e06013e0 	lbui	r3, r0, 5088	// 13e0 <_SDA2_BASE_>
+#else
+        lbui    r3, r0, ex_tmp_data_loc_2;
+#endif
+        sbi     r3, r4, 0;
+     7e4:	f0640000 	sbi	r3, r4, 0
+     7e8:	b0000000 	imm	0
+#ifdef __LITTLE_ENDIAN__
+        lbui    r3, r0, ex_tmp_data_loc_1;
+     7ec:	e06013e1 	lbui	r3, r0, 5089	// 13e1 <ex_tmp_data_loc_1>
+#else
+        lbui    r3, r0, ex_tmp_data_loc_3;
+#endif
+        sbi     r3, r4, 1;
+     7f0:	f0640001 	sbi	r3, r4, 1
+
+000007f4 <ex_sw_end>:
+ex_sw_end:                                              /* Exception handling of store word, ends. */
+        BRI     ex_handler_done;
+     7f4:	b80000a0 	bri	160	// 894 <ex_handler_done>
+
+000007f8 <handle_fp_ex>:
+#endif  /* !NO_UNALIGNED_EXCEPTIONS */
+
+#if (defined (MICROBLAZE_FP_EXCEPTION_ENABLED) && defined (MICROBLAZE_FP_EXCEPTION_DECODE)) || defined(SDT)
+handle_fp_ex:
+        ADDIK   r3, r17, -4;                            /* r17 contains (addr of exception causing FP instruction + 4) */
+     7f8:	3071fffc 	addik	r3, r17, -4
+        lw      r4, r0, r3;                             /* We might find ourselves in a spot here. Unguaranteed load   */
+     7fc:	c8801800 	lw	r4, r0, r3
+
+00000800 <handle_fp_ex_opb>:
+     800:	b0000000 	imm	0
+
+handle_fp_ex_opb:
+        ADDIK   r6, r0, fp_table_opb;                   /* Decode opB and store its value in mb_fpex_op_b */
+     804:	30c00cac 	addik	r6, r0, 3244	// cac <fp_table_opb>
+        srl     r4, r4;
+     808:	90840041 	srl	r4, r4
+        srl     r4, r4;
+     80c:	90840041 	srl	r4, r4
+        srl     r4, r4;
+     810:	90840041 	srl	r4, r4
+        srl     r4, r4;
+     814:	90840041 	srl	r4, r4
+        srl     r4, r4;
+     818:	90840041 	srl	r4, r4
+        srl     r4, r4;
+     81c:	90840041 	srl	r4, r4
+        srl     r4, r4;
+     820:	90840041 	srl	r4, r4
+        srl     r4, r4;
+     824:	90840041 	srl	r4, r4
+        srl     r4, r4;
+     828:	90840041 	srl	r4, r4
+        srl     r4, r4;
+     82c:	90840041 	srl	r4, r4
+        srl     r4, r4;
+     830:	90840041 	srl	r4, r4
+        andi    r3, r4, 0x1F;
+     834:	a464001f 	andi	r3, r4, 31
+        ADDK    r3, r3, r3;                             /* Calculate (fp_table_opb + (regno * 12)) in r5 */
+     838:	10631800 	addk	r3, r3, r3
+        ADDK    r3, r3, r3;
+     83c:	10631800 	addk	r3, r3, r3
+        ADDK    r5, r3, r3;
+     840:	10a31800 	addk	r5, r3, r3
+        ADDK    r5, r5, r3;
+     844:	10a51800 	addk	r5, r5, r3
+        ADDK    r5, r5, r6;
+     848:	10a53000 	addk	r5, r5, r6
+        bra     r5;
+     84c:	98082800 	bra	r5
+
+00000850 <handle_fp_ex_opa>:
+     850:	b0000000 	imm	0
+
+handle_fp_ex_opa:
+        ADDIK   r6, r0, fp_table_opa;                   /* Decode opA and store its value in mb_fpex_op_a */
+     854:	30c00ac0 	addik	r6, r0, 2752	// ac0 <fp_table_opa>
+        srl     r4, r4;
+     858:	90840041 	srl	r4, r4
+        srl     r4, r4;
+     85c:	90840041 	srl	r4, r4
+        srl     r4, r4;
+     860:	90840041 	srl	r4, r4
+        srl     r4, r4;
+     864:	90840041 	srl	r4, r4
+        srl     r4, r4;
+     868:	90840041 	srl	r4, r4
+        andi    r3, r4, 0x1F;
+     86c:	a464001f 	andi	r3, r4, 31
+        ADDK    r3, r3, r3;                             /* Calculate (fp_table_opb + (regno * 12)) in r5 */
+     870:	10631800 	addk	r3, r3, r3
+        ADDK    r3, r3, r3;
+     874:	10631800 	addk	r3, r3, r3
+        ADDK    r5, r3, r3;
+     878:	10a31800 	addk	r5, r3, r3
+        ADDK    r5, r5, r3;
+     87c:	10a51800 	addk	r5, r5, r3
+        ADDK    r5, r5, r6;
+     880:	10a53000 	addk	r5, r5, r6
+        bra     r5;
+     884:	98082800 	bra	r5
+
+00000888 <handle_fp_ex_done>:
+
+handle_fp_ex_done:
+        ori     r5, r0, 6;                              /* Set exception number back to 6 */
+     888:	a0a00006 	ori	r5, r0, 6
+        BRI     handle_other_ex_tail;
+     88c:	b800fdbc 	bri	-580	// 648 <handle_other_ex_tail>
+
+00000890 <fp_ex_unhandled>:
+
+fp_ex_unhandled:
+        bri     0;
+     890:	b8000000 	bri	0	// 890 <fp_ex_unhandled>
+
+00000894 <ex_handler_done>:
+#endif  /* defined (MICROBLAZE_FP_EXCEPTION_ENABLED) && defined (MICROBLAZE_FP_EXCEPTION_DECODE) */
+
+ex_handler_done:
+        POP_R17;
+     894:	ea210000 	lwi	r17, r1, 0
+        POP_MSR;
+     898:	e8a10050 	lwi	r5, r1, 80
+     89c:	9405c001 	mts	rmsr, r5
+        POP_REG(3);
+     8a0:	e8610010 	lwi	r3, r1, 16
+        POP_REG(4);
+     8a4:	e8810014 	lwi	r4, r1, 20
+        POP_REG(5);
+     8a8:	e8a10018 	lwi	r5, r1, 24
+        POP_REG(6);
+     8ac:	e8c1001c 	lwi	r6, r1, 28
+
+        ADDIK   r1, r1, (EX_HANDLER_STACK_SIZ);         /* Restore stack frame  */
+     8b0:	30210054 	addik	r1, r1, 84
+        rted    r17, 0
+     8b4:	b6910000 	rted	r17, 0
+	nop
+     8b8:	80000000 	or	r0, r0, r0
+
+000008bc <ex_handler_unhandled>:
+
+ex_handler_unhandled:
+        bri 0                                           /* UNHANDLED. TRAP HERE */
+     8bc:	b8000000 	bri	0	// 8bc <ex_handler_unhandled>
+
+000008c0 <lw_r0>:
+ */
+
+.section .text
+.align  4
+lw_table:
+lw_r0:  R3_TO_LWREG   (0);
+     8c0:	80001800 	or	r0, r0, r3
+     8c4:	b800ffd0 	bri	-48	// 894 <ex_handler_done>
+
+000008c8 <lw_r1>:
+lw_r1:  LWREG_NOP;
+     8c8:	b800fff4 	bri	-12	// 8bc <ex_handler_unhandled>
+     8cc:	80000000 	or	r0, r0, r0
+
+000008d0 <lw_r2>:
+lw_r2:  R3_TO_LWREG   (2);
+     8d0:	80401800 	or	r2, r0, r3
+     8d4:	b800ffc0 	bri	-64	// 894 <ex_handler_done>
+
+000008d8 <lw_r3>:
+lw_r3:  R3_TO_LWREG_V (3);
+     8d8:	f8610010 	swi	r3, r1, 16
+     8dc:	b800ffb8 	bri	-72	// 894 <ex_handler_done>
+
+000008e0 <lw_r4>:
+lw_r4:  R3_TO_LWREG_V (4);
+     8e0:	f8610014 	swi	r3, r1, 20
+     8e4:	b800ffb0 	bri	-80	// 894 <ex_handler_done>
+
+000008e8 <lw_r5>:
+lw_r5:  R3_TO_LWREG_V (5);
+     8e8:	f8610018 	swi	r3, r1, 24
+     8ec:	b800ffa8 	bri	-88	// 894 <ex_handler_done>
+
+000008f0 <lw_r6>:
+lw_r6:  R3_TO_LWREG_V (6);
+     8f0:	f861001c 	swi	r3, r1, 28
+     8f4:	b800ffa0 	bri	-96	// 894 <ex_handler_done>
+
+000008f8 <lw_r7>:
+lw_r7:  R3_TO_LWREG   (7);
+     8f8:	80e01800 	or	r7, r0, r3
+     8fc:	b800ff98 	bri	-104	// 894 <ex_handler_done>
+
+00000900 <lw_r8>:
+lw_r8:  R3_TO_LWREG   (8);
+     900:	81001800 	or	r8, r0, r3
+     904:	b800ff90 	bri	-112	// 894 <ex_handler_done>
+
+00000908 <lw_r9>:
+lw_r9:  R3_TO_LWREG   (9);
+     908:	81201800 	or	r9, r0, r3
+     90c:	b800ff88 	bri	-120	// 894 <ex_handler_done>
+
+00000910 <lw_r10>:
+lw_r10: R3_TO_LWREG   (10);
+     910:	81401800 	or	r10, r0, r3
+     914:	b800ff80 	bri	-128	// 894 <ex_handler_done>
+
+00000918 <lw_r11>:
+lw_r11: R3_TO_LWREG   (11);
+     918:	81601800 	or	r11, r0, r3
+     91c:	b800ff78 	bri	-136	// 894 <ex_handler_done>
+
+00000920 <lw_r12>:
+lw_r12: R3_TO_LWREG   (12);
+     920:	81801800 	or	r12, r0, r3
+     924:	b800ff70 	bri	-144	// 894 <ex_handler_done>
+
+00000928 <lw_r13>:
+lw_r13: R3_TO_LWREG   (13);
+     928:	81a01800 	or	r13, r0, r3
+     92c:	b800ff68 	bri	-152	// 894 <ex_handler_done>
+
+00000930 <lw_r14>:
+lw_r14: R3_TO_LWREG   (14);
+     930:	81c01800 	or	r14, r0, r3
+     934:	b800ff60 	bri	-160	// 894 <ex_handler_done>
+
+00000938 <lw_r15>:
+lw_r15: R3_TO_LWREG   (15);
+     938:	81e01800 	or	r15, r0, r3
+     93c:	b800ff58 	bri	-168	// 894 <ex_handler_done>
+
+00000940 <lw_r16>:
+lw_r16: R3_TO_LWREG   (16);
+     940:	82001800 	or	r16, r0, r3
+     944:	b800ff50 	bri	-176	// 894 <ex_handler_done>
+
+00000948 <lw_r17>:
+lw_r17: LWREG_NOP;
+     948:	b800ff74 	bri	-140	// 8bc <ex_handler_unhandled>
+     94c:	80000000 	or	r0, r0, r0
+
+00000950 <lw_r18>:
+lw_r18: R3_TO_LWREG   (18);
+     950:	82401800 	or	r18, r0, r3
+     954:	b800ff40 	bri	-192	// 894 <ex_handler_done>
+
+00000958 <lw_r19>:
+lw_r19: R3_TO_LWREG   (19);
+     958:	82601800 	or	r19, r0, r3
+     95c:	b800ff38 	bri	-200	// 894 <ex_handler_done>
+
+00000960 <lw_r20>:
+lw_r20: R3_TO_LWREG   (20);
+     960:	82801800 	or	r20, r0, r3
+     964:	b800ff30 	bri	-208	// 894 <ex_handler_done>
+
+00000968 <lw_r21>:
+lw_r21: R3_TO_LWREG   (21);
+     968:	82a01800 	or	r21, r0, r3
+     96c:	b800ff28 	bri	-216	// 894 <ex_handler_done>
+
+00000970 <lw_r22>:
+lw_r22: R3_TO_LWREG   (22);
+     970:	82c01800 	or	r22, r0, r3
+     974:	b800ff20 	bri	-224	// 894 <ex_handler_done>
+
+00000978 <lw_r23>:
+lw_r23: R3_TO_LWREG   (23);
+     978:	82e01800 	or	r23, r0, r3
+     97c:	b800ff18 	bri	-232	// 894 <ex_handler_done>
+
+00000980 <lw_r24>:
+lw_r24: R3_TO_LWREG   (24);
+     980:	83001800 	or	r24, r0, r3
+     984:	b800ff10 	bri	-240	// 894 <ex_handler_done>
+
+00000988 <lw_r25>:
+lw_r25: R3_TO_LWREG   (25);
+     988:	83201800 	or	r25, r0, r3
+     98c:	b800ff08 	bri	-248	// 894 <ex_handler_done>
+
+00000990 <lw_r26>:
+lw_r26: R3_TO_LWREG   (26);
+     990:	83401800 	or	r26, r0, r3
+     994:	b800ff00 	bri	-256	// 894 <ex_handler_done>
+
+00000998 <lw_r27>:
+lw_r27: R3_TO_LWREG   (27);
+     998:	83601800 	or	r27, r0, r3
+     99c:	b800fef8 	bri	-264	// 894 <ex_handler_done>
+
+000009a0 <lw_r28>:
+lw_r28: R3_TO_LWREG   (28);
+     9a0:	83801800 	or	r28, r0, r3
+     9a4:	b800fef0 	bri	-272	// 894 <ex_handler_done>
+
+000009a8 <lw_r29>:
+lw_r29: R3_TO_LWREG   (29);
+     9a8:	83a01800 	or	r29, r0, r3
+     9ac:	b800fee8 	bri	-280	// 894 <ex_handler_done>
+
+000009b0 <lw_r30>:
+lw_r30: R3_TO_LWREG   (30);
+     9b0:	83c01800 	or	r30, r0, r3
+     9b4:	b800fee0 	bri	-288	// 894 <ex_handler_done>
+
+000009b8 <lw_r31>:
+lw_r31: R3_TO_LWREG   (31);
+     9b8:	83e01800 	or	r31, r0, r3
+     9bc:	b800fed8 	bri	-296	// 894 <ex_handler_done>
+
+000009c0 <sw_r0>:
+
+sw_table:
+sw_r0:  SWREG_TO_R3   (0);
+     9c0:	80600000 	or	r3, r0, r0
+     9c4:	b800fdc8 	bri	-568	// 78c <ex_sw_tail>
+
+000009c8 <sw_r1>:
+sw_r1:  SWREG_NOP;
+     9c8:	b800fef4 	bri	-268	// 8bc <ex_handler_unhandled>
+     9cc:	80000000 	or	r0, r0, r0
+
+000009d0 <sw_r2>:
+sw_r2:  SWREG_TO_R3   (2);
+     9d0:	80601000 	or	r3, r0, r2
+     9d4:	b800fdb8 	bri	-584	// 78c <ex_sw_tail>
+
+000009d8 <sw_r3>:
+sw_r3:  SWREG_TO_R3_V (3);
+     9d8:	e8610010 	lwi	r3, r1, 16
+     9dc:	b800fdb0 	bri	-592	// 78c <ex_sw_tail>
+
+000009e0 <sw_r4>:
+sw_r4:  SWREG_TO_R3_V (4);
+     9e0:	e8610014 	lwi	r3, r1, 20
+     9e4:	b800fda8 	bri	-600	// 78c <ex_sw_tail>
+
+000009e8 <sw_r5>:
+sw_r5:  SWREG_TO_R3_V (5);
+     9e8:	e8610018 	lwi	r3, r1, 24
+     9ec:	b800fda0 	bri	-608	// 78c <ex_sw_tail>
+
+000009f0 <sw_r6>:
+sw_r6:  SWREG_TO_R3_V (6);
+     9f0:	e861001c 	lwi	r3, r1, 28
+     9f4:	b800fd98 	bri	-616	// 78c <ex_sw_tail>
+
+000009f8 <sw_r7>:
+sw_r7:  SWREG_TO_R3   (7);
+     9f8:	80603800 	or	r3, r0, r7
+     9fc:	b800fd90 	bri	-624	// 78c <ex_sw_tail>
+
+00000a00 <sw_r8>:
+sw_r8:  SWREG_TO_R3   (8);
+     a00:	80604000 	or	r3, r0, r8
+     a04:	b800fd88 	bri	-632	// 78c <ex_sw_tail>
+
+00000a08 <sw_r9>:
+sw_r9:  SWREG_TO_R3   (9);
+     a08:	80604800 	or	r3, r0, r9
+     a0c:	b800fd80 	bri	-640	// 78c <ex_sw_tail>
+
+00000a10 <sw_r10>:
+sw_r10: SWREG_TO_R3   (10);
+     a10:	80605000 	or	r3, r0, r10
+     a14:	b800fd78 	bri	-648	// 78c <ex_sw_tail>
+
+00000a18 <sw_r11>:
+sw_r11: SWREG_TO_R3   (11);
+     a18:	80605800 	or	r3, r0, r11
+     a1c:	b800fd70 	bri	-656	// 78c <ex_sw_tail>
+
+00000a20 <sw_r12>:
+sw_r12: SWREG_TO_R3   (12);
+     a20:	80606000 	or	r3, r0, r12
+     a24:	b800fd68 	bri	-664	// 78c <ex_sw_tail>
+
+00000a28 <sw_r13>:
+sw_r13: SWREG_TO_R3   (13);
+     a28:	80606800 	or	r3, r0, r13
+     a2c:	b800fd60 	bri	-672	// 78c <ex_sw_tail>
+
+00000a30 <sw_r14>:
+sw_r14: SWREG_TO_R3   (14);
+     a30:	80607000 	or	r3, r0, r14
+     a34:	b800fd58 	bri	-680	// 78c <ex_sw_tail>
+
+00000a38 <sw_r15>:
+sw_r15: SWREG_TO_R3   (15);
+     a38:	80607800 	or	r3, r0, r15
+     a3c:	b800fd50 	bri	-688	// 78c <ex_sw_tail>
+
+00000a40 <sw_r16>:
+sw_r16: SWREG_TO_R3   (16);
+     a40:	80608000 	or	r3, r0, r16
+     a44:	b800fd48 	bri	-696	// 78c <ex_sw_tail>
+
+00000a48 <sw_r17>:
+sw_r17: SWREG_NOP;
+     a48:	b800fe74 	bri	-396	// 8bc <ex_handler_unhandled>
+     a4c:	80000000 	or	r0, r0, r0
+
+00000a50 <sw_r18>:
+sw_r18: SWREG_TO_R3   (18);
+     a50:	80609000 	or	r3, r0, r18
+     a54:	b800fd38 	bri	-712	// 78c <ex_sw_tail>
+
+00000a58 <sw_r19>:
+sw_r19: SWREG_TO_R3   (19);
+     a58:	80609800 	or	r3, r0, r19
+     a5c:	b800fd30 	bri	-720	// 78c <ex_sw_tail>
+
+00000a60 <sw_r20>:
+sw_r20: SWREG_TO_R3   (20);
+     a60:	8060a000 	or	r3, r0, r20
+     a64:	b800fd28 	bri	-728	// 78c <ex_sw_tail>
+
+00000a68 <sw_r21>:
+sw_r21: SWREG_TO_R3   (21);
+     a68:	8060a800 	or	r3, r0, r21
+     a6c:	b800fd20 	bri	-736	// 78c <ex_sw_tail>
+
+00000a70 <sw_r22>:
+sw_r22: SWREG_TO_R3   (22);
+     a70:	8060b000 	or	r3, r0, r22
+     a74:	b800fd18 	bri	-744	// 78c <ex_sw_tail>
+
+00000a78 <sw_r23>:
+sw_r23: SWREG_TO_R3   (23);
+     a78:	8060b800 	or	r3, r0, r23
+     a7c:	b800fd10 	bri	-752	// 78c <ex_sw_tail>
+
+00000a80 <sw_r24>:
+sw_r24: SWREG_TO_R3   (24);
+     a80:	8060c000 	or	r3, r0, r24
+     a84:	b800fd08 	bri	-760	// 78c <ex_sw_tail>
+
+00000a88 <sw_r25>:
+sw_r25: SWREG_TO_R3   (25);
+     a88:	8060c800 	or	r3, r0, r25
+     a8c:	b800fd00 	bri	-768	// 78c <ex_sw_tail>
+
+00000a90 <sw_r26>:
+sw_r26: SWREG_TO_R3   (26);
+     a90:	8060d000 	or	r3, r0, r26
+     a94:	b800fcf8 	bri	-776	// 78c <ex_sw_tail>
+
+00000a98 <sw_r27>:
+sw_r27: SWREG_TO_R3   (27);
+     a98:	8060d800 	or	r3, r0, r27
+     a9c:	b800fcf0 	bri	-784	// 78c <ex_sw_tail>
+
+00000aa0 <sw_r28>:
+sw_r28: SWREG_TO_R3   (28);
+     aa0:	8060e000 	or	r3, r0, r28
+     aa4:	b800fce8 	bri	-792	// 78c <ex_sw_tail>
+
+00000aa8 <sw_r29>:
+sw_r29: SWREG_TO_R3   (29);
+     aa8:	8060e800 	or	r3, r0, r29
+     aac:	b800fce0 	bri	-800	// 78c <ex_sw_tail>
+
+00000ab0 <sw_r30>:
+sw_r30: SWREG_TO_R3   (30);
+     ab0:	8060f000 	or	r3, r0, r30
+     ab4:	b800fcd8 	bri	-808	// 78c <ex_sw_tail>
+
+00000ab8 <sw_r31>:
+sw_r31: SWREG_TO_R3   (31);
+     ab8:	8060f800 	or	r3, r0, r31
+     abc:	b800fcd0 	bri	-816	// 78c <ex_sw_tail>
+
+00000ac0 <fp_table_opa>:
+     ac0:	b0000000 	imm	0
+ */
+
+.section .text
+.align  4
+fp_table_opa:
+opa_r0: FP_EX_OPA_SAVE (0);
+     ac4:	f80013e8 	swi	r0, r0, 5096	// 13e8 <mb_fpex_op_a>
+     ac8:	80000000 	or	r0, r0, r0
+     acc:	b800fdbc 	bri	-580	// 888 <handle_fp_ex_done>
+
+00000ad0 <opa_r1>:
+opa_r1: FP_EX_UNHANDLED;
+     ad0:	b800fdc0 	bri	-576	// 890 <fp_ex_unhandled>
+     ad4:	80000000 	or	r0, r0, r0
+     ad8:	80000000 	or	r0, r0, r0
+
+00000adc <opa_r2>:
+     adc:	b0000000 	imm	0
+opa_r2: FP_EX_OPA_SAVE (2);
+     ae0:	f84013e8 	swi	r2, r0, 5096	// 13e8 <mb_fpex_op_a>
+     ae4:	80000000 	or	r0, r0, r0
+     ae8:	b800fda0 	bri	-608	// 888 <handle_fp_ex_done>
+
+00000aec <opa_r3>:
+opa_r3: FP_EX_OPA_SAVE_V (3);
+     aec:	e8610010 	lwi	r3, r1, 16
+     af0:	b0000000 	imm	0
+     af4:	f86013e8 	swi	r3, r0, 5096	// 13e8 <mb_fpex_op_a>
+     af8:	b800fd90 	bri	-624	// 888 <handle_fp_ex_done>
+
+00000afc <opa_r4>:
+opa_r4: FP_EX_OPA_SAVE_V (4);
+     afc:	e8610014 	lwi	r3, r1, 20
+     b00:	b0000000 	imm	0
+     b04:	f86013e8 	swi	r3, r0, 5096	// 13e8 <mb_fpex_op_a>
+     b08:	b800fd80 	bri	-640	// 888 <handle_fp_ex_done>
+
+00000b0c <opa_r5>:
+opa_r5: FP_EX_OPA_SAVE_V (5);
+     b0c:	e8610018 	lwi	r3, r1, 24
+     b10:	b0000000 	imm	0
+     b14:	f86013e8 	swi	r3, r0, 5096	// 13e8 <mb_fpex_op_a>
+     b18:	b800fd70 	bri	-656	// 888 <handle_fp_ex_done>
+
+00000b1c <opa_r6>:
+opa_r6: FP_EX_OPA_SAVE_V (6);
+     b1c:	e861001c 	lwi	r3, r1, 28
+     b20:	b0000000 	imm	0
+     b24:	f86013e8 	swi	r3, r0, 5096	// 13e8 <mb_fpex_op_a>
+     b28:	b800fd60 	bri	-672	// 888 <handle_fp_ex_done>
+
+00000b2c <opa_r7>:
+     b2c:	b0000000 	imm	0
+opa_r7: FP_EX_OPA_SAVE (7);
+     b30:	f8e013e8 	swi	r7, r0, 5096	// 13e8 <mb_fpex_op_a>
+     b34:	80000000 	or	r0, r0, r0
+     b38:	b800fd50 	bri	-688	// 888 <handle_fp_ex_done>
+
+00000b3c <opa_r8>:
+     b3c:	b0000000 	imm	0
+opa_r8: FP_EX_OPA_SAVE (8);
+     b40:	f90013e8 	swi	r8, r0, 5096	// 13e8 <mb_fpex_op_a>
+     b44:	80000000 	or	r0, r0, r0
+     b48:	b800fd40 	bri	-704	// 888 <handle_fp_ex_done>
+
+00000b4c <opa_r9>:
+     b4c:	b0000000 	imm	0
+opa_r9: FP_EX_OPA_SAVE (9);
+     b50:	f92013e8 	swi	r9, r0, 5096	// 13e8 <mb_fpex_op_a>
+     b54:	80000000 	or	r0, r0, r0
+     b58:	b800fd30 	bri	-720	// 888 <handle_fp_ex_done>
+
+00000b5c <opa_r10>:
+     b5c:	b0000000 	imm	0
+opa_r10: FP_EX_OPA_SAVE (10);
+     b60:	f94013e8 	swi	r10, r0, 5096	// 13e8 <mb_fpex_op_a>
+     b64:	80000000 	or	r0, r0, r0
+     b68:	b800fd20 	bri	-736	// 888 <handle_fp_ex_done>
+
+00000b6c <opa_r11>:
+     b6c:	b0000000 	imm	0
+opa_r11: FP_EX_OPA_SAVE (11);
+     b70:	f96013e8 	swi	r11, r0, 5096	// 13e8 <mb_fpex_op_a>
+     b74:	80000000 	or	r0, r0, r0
+     b78:	b800fd10 	bri	-752	// 888 <handle_fp_ex_done>
+
+00000b7c <opa_r12>:
+     b7c:	b0000000 	imm	0
+opa_r12: FP_EX_OPA_SAVE (12);
+     b80:	f98013e8 	swi	r12, r0, 5096	// 13e8 <mb_fpex_op_a>
+     b84:	80000000 	or	r0, r0, r0
+     b88:	b800fd00 	bri	-768	// 888 <handle_fp_ex_done>
+
+00000b8c <opa_r13>:
+     b8c:	b0000000 	imm	0
+opa_r13: FP_EX_OPA_SAVE (13);
+     b90:	f9a013e8 	swi	r13, r0, 5096	// 13e8 <mb_fpex_op_a>
+     b94:	80000000 	or	r0, r0, r0
+     b98:	b800fcf0 	bri	-784	// 888 <handle_fp_ex_done>
+
+00000b9c <opa_r14>:
+opa_r14: FP_EX_UNHANDLED;
+     b9c:	b800fcf4 	bri	-780	// 890 <fp_ex_unhandled>
+     ba0:	80000000 	or	r0, r0, r0
+     ba4:	80000000 	or	r0, r0, r0
+
+00000ba8 <opa_r15>:
+opa_r15: FP_EX_UNHANDLED;
+     ba8:	b800fce8 	bri	-792	// 890 <fp_ex_unhandled>
+     bac:	80000000 	or	r0, r0, r0
+     bb0:	80000000 	or	r0, r0, r0
+
+00000bb4 <opa_r16>:
+opa_r16: FP_EX_UNHANDLED;
+     bb4:	b800fcdc 	bri	-804	// 890 <fp_ex_unhandled>
+     bb8:	80000000 	or	r0, r0, r0
+     bbc:	80000000 	or	r0, r0, r0
+
+00000bc0 <opa_r17>:
+opa_r17: FP_EX_UNHANDLED;
+     bc0:	b800fcd0 	bri	-816	// 890 <fp_ex_unhandled>
+     bc4:	80000000 	or	r0, r0, r0
+     bc8:	80000000 	or	r0, r0, r0
+
+00000bcc <opa_r18>:
+     bcc:	b0000000 	imm	0
+opa_r18: FP_EX_OPA_SAVE (18);
+     bd0:	fa4013e8 	swi	r18, r0, 5096	// 13e8 <mb_fpex_op_a>
+     bd4:	80000000 	or	r0, r0, r0
+     bd8:	b800fcb0 	bri	-848	// 888 <handle_fp_ex_done>
+
+00000bdc <opa_r19>:
+     bdc:	b0000000 	imm	0
+opa_r19: FP_EX_OPA_SAVE (19);
+     be0:	fa6013e8 	swi	r19, r0, 5096	// 13e8 <mb_fpex_op_a>
+     be4:	80000000 	or	r0, r0, r0
+     be8:	b800fca0 	bri	-864	// 888 <handle_fp_ex_done>
+
+00000bec <opa_r20>:
+     bec:	b0000000 	imm	0
+opa_r20: FP_EX_OPA_SAVE (20);
+     bf0:	fa8013e8 	swi	r20, r0, 5096	// 13e8 <mb_fpex_op_a>
+     bf4:	80000000 	or	r0, r0, r0
+     bf8:	b800fc90 	bri	-880	// 888 <handle_fp_ex_done>
+
+00000bfc <opa_r21>:
+     bfc:	b0000000 	imm	0
+opa_r21: FP_EX_OPA_SAVE (21);
+     c00:	faa013e8 	swi	r21, r0, 5096	// 13e8 <mb_fpex_op_a>
+     c04:	80000000 	or	r0, r0, r0
+     c08:	b800fc80 	bri	-896	// 888 <handle_fp_ex_done>
+
+00000c0c <opa_r22>:
+     c0c:	b0000000 	imm	0
+opa_r22: FP_EX_OPA_SAVE (22);
+     c10:	fac013e8 	swi	r22, r0, 5096	// 13e8 <mb_fpex_op_a>
+     c14:	80000000 	or	r0, r0, r0
+     c18:	b800fc70 	bri	-912	// 888 <handle_fp_ex_done>
+
+00000c1c <opa_r23>:
+     c1c:	b0000000 	imm	0
+opa_r23: FP_EX_OPA_SAVE (23);
+     c20:	fae013e8 	swi	r23, r0, 5096	// 13e8 <mb_fpex_op_a>
+     c24:	80000000 	or	r0, r0, r0
+     c28:	b800fc60 	bri	-928	// 888 <handle_fp_ex_done>
+
+00000c2c <opa_r24>:
+     c2c:	b0000000 	imm	0
+opa_r24: FP_EX_OPA_SAVE (24);
+     c30:	fb0013e8 	swi	r24, r0, 5096	// 13e8 <mb_fpex_op_a>
+     c34:	80000000 	or	r0, r0, r0
+     c38:	b800fc50 	bri	-944	// 888 <handle_fp_ex_done>
+
+00000c3c <opa_r25>:
+     c3c:	b0000000 	imm	0
+opa_r25: FP_EX_OPA_SAVE (25);
+     c40:	fb2013e8 	swi	r25, r0, 5096	// 13e8 <mb_fpex_op_a>
+     c44:	80000000 	or	r0, r0, r0
+     c48:	b800fc40 	bri	-960	// 888 <handle_fp_ex_done>
+
+00000c4c <opa_r26>:
+     c4c:	b0000000 	imm	0
+opa_r26: FP_EX_OPA_SAVE (26);
+     c50:	fb4013e8 	swi	r26, r0, 5096	// 13e8 <mb_fpex_op_a>
+     c54:	80000000 	or	r0, r0, r0
+     c58:	b800fc30 	bri	-976	// 888 <handle_fp_ex_done>
+
+00000c5c <opa_r27>:
+     c5c:	b0000000 	imm	0
+opa_r27: FP_EX_OPA_SAVE (27);
+     c60:	fb6013e8 	swi	r27, r0, 5096	// 13e8 <mb_fpex_op_a>
+     c64:	80000000 	or	r0, r0, r0
+     c68:	b800fc20 	bri	-992	// 888 <handle_fp_ex_done>
+
+00000c6c <opa_r28>:
+     c6c:	b0000000 	imm	0
+opa_r28: FP_EX_OPA_SAVE (28);
+     c70:	fb8013e8 	swi	r28, r0, 5096	// 13e8 <mb_fpex_op_a>
+     c74:	80000000 	or	r0, r0, r0
+     c78:	b800fc10 	bri	-1008	// 888 <handle_fp_ex_done>
+
+00000c7c <opa_r29>:
+     c7c:	b0000000 	imm	0
+opa_r29: FP_EX_OPA_SAVE (29);
+     c80:	fba013e8 	swi	r29, r0, 5096	// 13e8 <mb_fpex_op_a>
+     c84:	80000000 	or	r0, r0, r0
+     c88:	b800fc00 	bri	-1024	// 888 <handle_fp_ex_done>
+
+00000c8c <opa_r30>:
+     c8c:	b0000000 	imm	0
+opa_r30: FP_EX_OPA_SAVE (30);
+     c90:	fbc013e8 	swi	r30, r0, 5096	// 13e8 <mb_fpex_op_a>
+     c94:	80000000 	or	r0, r0, r0
+     c98:	b800fbf0 	bri	-1040	// 888 <handle_fp_ex_done>
+
+00000c9c <opa_r31>:
+     c9c:	b0000000 	imm	0
+opa_r31: FP_EX_OPA_SAVE (31);
+     ca0:	fbe013e8 	swi	r31, r0, 5096	// 13e8 <mb_fpex_op_a>
+     ca4:	80000000 	or	r0, r0, r0
+     ca8:	b800fbe0 	bri	-1056	// 888 <handle_fp_ex_done>
+
+00000cac <fp_table_opb>:
+     cac:	b0000000 	imm	0
+
+fp_table_opb:
+opb_r0: FP_EX_OPB_SAVE (0);
+     cb0:	f80013ec 	swi	r0, r0, 5100	// 13ec <mb_fpex_op_b>
+     cb4:	80000000 	or	r0, r0, r0
+     cb8:	b800fb98 	bri	-1128	// 850 <handle_fp_ex_opa>
+
+00000cbc <opb_r1>:
+opb_r1: FP_EX_UNHANDLED;
+     cbc:	b800fbd4 	bri	-1068	// 890 <fp_ex_unhandled>
+     cc0:	80000000 	or	r0, r0, r0
+     cc4:	80000000 	or	r0, r0, r0
+
+00000cc8 <opb_r2>:
+     cc8:	b0000000 	imm	0
+opb_r2: FP_EX_OPB_SAVE (2);
+     ccc:	f84013ec 	swi	r2, r0, 5100	// 13ec <mb_fpex_op_b>
+     cd0:	80000000 	or	r0, r0, r0
+     cd4:	b800fb7c 	bri	-1156	// 850 <handle_fp_ex_opa>
+
+00000cd8 <opb_r3>:
+opb_r3: FP_EX_OPB_SAVE_V (3);
+     cd8:	e8610010 	lwi	r3, r1, 16
+     cdc:	b0000000 	imm	0
+     ce0:	f86013ec 	swi	r3, r0, 5100	// 13ec <mb_fpex_op_b>
+     ce4:	b800fb6c 	bri	-1172	// 850 <handle_fp_ex_opa>
+
+00000ce8 <opb_r4>:
+opb_r4: FP_EX_OPB_SAVE_V (4);
+     ce8:	e8610014 	lwi	r3, r1, 20
+     cec:	b0000000 	imm	0
+     cf0:	f86013ec 	swi	r3, r0, 5100	// 13ec <mb_fpex_op_b>
+     cf4:	b800fb5c 	bri	-1188	// 850 <handle_fp_ex_opa>
+
+00000cf8 <opb_r5>:
+opb_r5: FP_EX_OPB_SAVE_V (5);
+     cf8:	e8610018 	lwi	r3, r1, 24
+     cfc:	b0000000 	imm	0
+     d00:	f86013ec 	swi	r3, r0, 5100	// 13ec <mb_fpex_op_b>
+     d04:	b800fb4c 	bri	-1204	// 850 <handle_fp_ex_opa>
+
+00000d08 <opb_r6>:
+opb_r6: FP_EX_OPB_SAVE_V (6);
+     d08:	e861001c 	lwi	r3, r1, 28
+     d0c:	b0000000 	imm	0
+     d10:	f86013ec 	swi	r3, r0, 5100	// 13ec <mb_fpex_op_b>
+     d14:	b800fb3c 	bri	-1220	// 850 <handle_fp_ex_opa>
+
+00000d18 <opb_r7>:
+     d18:	b0000000 	imm	0
+opb_r7: FP_EX_OPB_SAVE (7);
+     d1c:	f8e013ec 	swi	r7, r0, 5100	// 13ec <mb_fpex_op_b>
+     d20:	80000000 	or	r0, r0, r0
+     d24:	b800fb2c 	bri	-1236	// 850 <handle_fp_ex_opa>
+
+00000d28 <opb_r8>:
+     d28:	b0000000 	imm	0
+opb_r8: FP_EX_OPB_SAVE (8);
+     d2c:	f90013ec 	swi	r8, r0, 5100	// 13ec <mb_fpex_op_b>
+     d30:	80000000 	or	r0, r0, r0
+     d34:	b800fb1c 	bri	-1252	// 850 <handle_fp_ex_opa>
+
+00000d38 <opb_r9>:
+     d38:	b0000000 	imm	0
+opb_r9: FP_EX_OPB_SAVE (9);
+     d3c:	f92013ec 	swi	r9, r0, 5100	// 13ec <mb_fpex_op_b>
+     d40:	80000000 	or	r0, r0, r0
+     d44:	b800fb0c 	bri	-1268	// 850 <handle_fp_ex_opa>
+
+00000d48 <opb_r10>:
+     d48:	b0000000 	imm	0
+opb_r10: FP_EX_OPB_SAVE (10);
+     d4c:	f94013ec 	swi	r10, r0, 5100	// 13ec <mb_fpex_op_b>
+     d50:	80000000 	or	r0, r0, r0
+     d54:	b800fafc 	bri	-1284	// 850 <handle_fp_ex_opa>
+
+00000d58 <opb_r11>:
+     d58:	b0000000 	imm	0
+opb_r11: FP_EX_OPB_SAVE (11);
+     d5c:	f96013ec 	swi	r11, r0, 5100	// 13ec <mb_fpex_op_b>
+     d60:	80000000 	or	r0, r0, r0
+     d64:	b800faec 	bri	-1300	// 850 <handle_fp_ex_opa>
+
+00000d68 <opb_r12>:
+     d68:	b0000000 	imm	0
+opb_r12: FP_EX_OPB_SAVE (12);
+     d6c:	f98013ec 	swi	r12, r0, 5100	// 13ec <mb_fpex_op_b>
+     d70:	80000000 	or	r0, r0, r0
+     d74:	b800fadc 	bri	-1316	// 850 <handle_fp_ex_opa>
+
+00000d78 <opb_r13>:
+     d78:	b0000000 	imm	0
+opb_r13: FP_EX_OPB_SAVE (13);
+     d7c:	f9a013ec 	swi	r13, r0, 5100	// 13ec <mb_fpex_op_b>
+     d80:	80000000 	or	r0, r0, r0
+     d84:	b800facc 	bri	-1332	// 850 <handle_fp_ex_opa>
+
+00000d88 <opb_r14>:
+opb_r14: FP_EX_UNHANDLED;
+     d88:	b800fb08 	bri	-1272	// 890 <fp_ex_unhandled>
+     d8c:	80000000 	or	r0, r0, r0
+     d90:	80000000 	or	r0, r0, r0
+
+00000d94 <opb_r15>:
+opb_r15: FP_EX_UNHANDLED;
+     d94:	b800fafc 	bri	-1284	// 890 <fp_ex_unhandled>
+     d98:	80000000 	or	r0, r0, r0
+     d9c:	80000000 	or	r0, r0, r0
+
+00000da0 <opb_r16>:
+opb_r16: FP_EX_UNHANDLED;
+     da0:	b800faf0 	bri	-1296	// 890 <fp_ex_unhandled>
+     da4:	80000000 	or	r0, r0, r0
+     da8:	80000000 	or	r0, r0, r0
+
+00000dac <opb_r17>:
+opb_r17: FP_EX_UNHANDLED;
+     dac:	b800fae4 	bri	-1308	// 890 <fp_ex_unhandled>
+     db0:	80000000 	or	r0, r0, r0
+     db4:	80000000 	or	r0, r0, r0
+
+00000db8 <opb_r18>:
+     db8:	b0000000 	imm	0
+opb_r18: FP_EX_OPB_SAVE (18);
+     dbc:	fa4013ec 	swi	r18, r0, 5100	// 13ec <mb_fpex_op_b>
+     dc0:	80000000 	or	r0, r0, r0
+     dc4:	b800fa8c 	bri	-1396	// 850 <handle_fp_ex_opa>
+
+00000dc8 <opb_r19>:
+     dc8:	b0000000 	imm	0
+opb_r19: FP_EX_OPB_SAVE (19);
+     dcc:	fa6013ec 	swi	r19, r0, 5100	// 13ec <mb_fpex_op_b>
+     dd0:	80000000 	or	r0, r0, r0
+     dd4:	b800fa7c 	bri	-1412	// 850 <handle_fp_ex_opa>
+
+00000dd8 <opb_r20>:
+     dd8:	b0000000 	imm	0
+opb_r20: FP_EX_OPB_SAVE (20);
+     ddc:	fa8013ec 	swi	r20, r0, 5100	// 13ec <mb_fpex_op_b>
+     de0:	80000000 	or	r0, r0, r0
+     de4:	b800fa6c 	bri	-1428	// 850 <handle_fp_ex_opa>
+
+00000de8 <opb_r21>:
+     de8:	b0000000 	imm	0
+opb_r21: FP_EX_OPB_SAVE (21);
+     dec:	faa013ec 	swi	r21, r0, 5100	// 13ec <mb_fpex_op_b>
+     df0:	80000000 	or	r0, r0, r0
+     df4:	b800fa5c 	bri	-1444	// 850 <handle_fp_ex_opa>
+
+00000df8 <opb_r22>:
+     df8:	b0000000 	imm	0
+opb_r22: FP_EX_OPB_SAVE (22);
+     dfc:	fac013ec 	swi	r22, r0, 5100	// 13ec <mb_fpex_op_b>
+     e00:	80000000 	or	r0, r0, r0
+     e04:	b800fa4c 	bri	-1460	// 850 <handle_fp_ex_opa>
+
+00000e08 <opb_r23>:
+     e08:	b0000000 	imm	0
+opb_r23: FP_EX_OPB_SAVE (23);
+     e0c:	fae013ec 	swi	r23, r0, 5100	// 13ec <mb_fpex_op_b>
+     e10:	80000000 	or	r0, r0, r0
+     e14:	b800fa3c 	bri	-1476	// 850 <handle_fp_ex_opa>
+
+00000e18 <opb_r24>:
+     e18:	b0000000 	imm	0
+opb_r24: FP_EX_OPB_SAVE (24);
+     e1c:	fb0013ec 	swi	r24, r0, 5100	// 13ec <mb_fpex_op_b>
+     e20:	80000000 	or	r0, r0, r0
+     e24:	b800fa2c 	bri	-1492	// 850 <handle_fp_ex_opa>
+
+00000e28 <opb_r25>:
+     e28:	b0000000 	imm	0
+opb_r25: FP_EX_OPB_SAVE (25);
+     e2c:	fb2013ec 	swi	r25, r0, 5100	// 13ec <mb_fpex_op_b>
+     e30:	80000000 	or	r0, r0, r0
+     e34:	b800fa1c 	bri	-1508	// 850 <handle_fp_ex_opa>
+
+00000e38 <opb_r26>:
+     e38:	b0000000 	imm	0
+opb_r26: FP_EX_OPB_SAVE (26);
+     e3c:	fb4013ec 	swi	r26, r0, 5100	// 13ec <mb_fpex_op_b>
+     e40:	80000000 	or	r0, r0, r0
+     e44:	b800fa0c 	bri	-1524	// 850 <handle_fp_ex_opa>
+
+00000e48 <opb_r27>:
+     e48:	b0000000 	imm	0
+opb_r27: FP_EX_OPB_SAVE (27);
+     e4c:	fb6013ec 	swi	r27, r0, 5100	// 13ec <mb_fpex_op_b>
+     e50:	80000000 	or	r0, r0, r0
+     e54:	b800f9fc 	bri	-1540	// 850 <handle_fp_ex_opa>
+
+00000e58 <opb_r28>:
+     e58:	b0000000 	imm	0
+opb_r28: FP_EX_OPB_SAVE (28);
+     e5c:	fb8013ec 	swi	r28, r0, 5100	// 13ec <mb_fpex_op_b>
+     e60:	80000000 	or	r0, r0, r0
+     e64:	b800f9ec 	bri	-1556	// 850 <handle_fp_ex_opa>
+
+00000e68 <opb_r29>:
+     e68:	b0000000 	imm	0
+opb_r29: FP_EX_OPB_SAVE (29);
+     e6c:	fba013ec 	swi	r29, r0, 5100	// 13ec <mb_fpex_op_b>
+     e70:	80000000 	or	r0, r0, r0
+     e74:	b800f9dc 	bri	-1572	// 850 <handle_fp_ex_opa>
+
+00000e78 <opb_r30>:
+     e78:	b0000000 	imm	0
+opb_r30: FP_EX_OPB_SAVE (30);
+     e7c:	fbc013ec 	swi	r30, r0, 5100	// 13ec <mb_fpex_op_b>
+     e80:	80000000 	or	r0, r0, r0
+     e84:	b800f9cc 	bri	-1588	// 850 <handle_fp_ex_opa>
+
+00000e88 <opb_r31>:
+     e88:	b0000000 	imm	0
+opb_r31: FP_EX_OPB_SAVE (31);
+     e8c:	fbe013ec 	swi	r31, r0, 5100	// 13ec <mb_fpex_op_b>
+     e90:	80000000 	or	r0, r0, r0
+     e94:	b800f9bc 	bri	-1604	// 850 <handle_fp_ex_opa>
+
+00000e98 <__interrupt_handler()>:
+     e98:	3021ffac 	addik	r1, r1, -84
+     e9c:	f9e10000 	swi	r15, r1, 0
+     ea0:	f8210020 	swi	r1, r1, 32
+     ea4:	f8610024 	swi	r3, r1, 36
+     ea8:	f8810028 	swi	r4, r1, 40
+     eac:	f8a1002c 	swi	r5, r1, 44
+     eb0:	f8c10030 	swi	r6, r1, 48
+     eb4:	f8e10034 	swi	r7, r1, 52
+     eb8:	f9010038 	swi	r8, r1, 56
+     ebc:	f921003c 	swi	r9, r1, 60
+     ec0:	f9410040 	swi	r10, r1, 64
+     ec4:	f9610044 	swi	r11, r1, 68
+     ec8:	f9810048 	swi	r12, r1, 72
+     ecc:	fa21004c 	swi	r17, r1, 76
+     ed0:	95608001 	mfs	r11, rmsr
+     ed4:	b0000000 	imm	0
+     ed8:	30601528 	addik	r3, r0, 5416	// 1528 <MB_InterruptVectorTable>
+     edc:	fa410050 	swi	r18, r1, 80
+     ee0:	f961001c 	swi	r11, r1, 28
+     ee4:	e8830000 	lwi	r4, r3, 0
+     ee8:	99fc2000 	brald	r15, r4
+     eec:	e8a30004 	lwi	r5, r3, 4
+     ef0:	e9e10000 	lwi	r15, r1, 0
+     ef4:	e961001c 	lwi	r11, r1, 28
+     ef8:	e8210020 	lwi	r1, r1, 32
+     efc:	940bc001 	mts	rmsr, r11
+     f00:	e8610024 	lwi	r3, r1, 36
+     f04:	e8810028 	lwi	r4, r1, 40
+     f08:	e8a1002c 	lwi	r5, r1, 44
+     f0c:	e8c10030 	lwi	r6, r1, 48
+     f10:	e8e10034 	lwi	r7, r1, 52
+     f14:	e9010038 	lwi	r8, r1, 56
+     f18:	e921003c 	lwi	r9, r1, 60
+     f1c:	e9410040 	lwi	r10, r1, 64
+     f20:	e9610044 	lwi	r11, r1, 68
+     f24:	e9810048 	lwi	r12, r1, 72
+     f28:	ea21004c 	lwi	r17, r1, 76
+     f2c:	ea410050 	lwi	r18, r1, 80
+     f30:	b62e0000 	rtid	r14, 0
+     f34:	30210054 	addik	r1, r1, 84
+
+00000f38 <microblaze_register_handler(void (*)(void*), void*)>:
+     f38:	b0000000 	imm	0
+     f3c:	30601528 	addik	r3, r0, 5416	// 1528 <MB_InterruptVectorTable>
+     f40:	f8a30000 	swi	r5, r3, 0
+     f44:	b60f0008 	rtsd	r15, 8
+     f48:	f8c30004 	swi	r6, r3, 4
+
+00000f4c <exit>:
+     f4c:	3021ffe0 	addik	r1, r1, -32
+     f50:	10c00000 	addk	r6, r0, r0
+     f54:	fa61001c 	swi	r19, r1, 28
+     f58:	f9e10000 	swi	r15, r1, 0
+     f5c:	b0000000 	imm	0
+     f60:	b9f4002c 	brlid	r15, 44	// f8c <__call_exitprocs>
+     f64:	12650000 	addk	r19, r5, r0
+     f68:	b0000000 	imm	0
+     f6c:	e8a013dc 	lwi	r5, r0, 5084	// 13dc <_global_impure_ptr>
+     f70:	e8650028 	lwi	r3, r5, 40
+     f74:	bc03000c 	beqi	r3, 12		// f80
+     f78:	99fc1800 	brald	r15, r3
+     f7c:	80000000 	or	r0, r0, r0
+     f80:	b000ffff 	imm	-1
+     f84:	b9f4f0fc 	brlid	r15, -3844	// 80 <_exit>
+     f88:	10b30000 	addk	r5, r19, r0
+
+00000f8c <__call_exitprocs>:
+     f8c:	3021ffc4 	addik	r1, r1, -60
+     f90:	fae10024 	swi	r23, r1, 36
+     f94:	b0000000 	imm	0
+     f98:	eae013dc 	lwi	r23, r0, 5084	// 13dc <_global_impure_ptr>
+     f9c:	f9e10000 	swi	r15, r1, 0
+     fa0:	fa61001c 	swi	r19, r1, 28
+     fa4:	fac10020 	swi	r22, r1, 32
+     fa8:	fb010028 	swi	r24, r1, 40
+     fac:	fb21002c 	swi	r25, r1, 44
+     fb0:	fb410030 	swi	r26, r1, 48
+     fb4:	fb610034 	swi	r27, r1, 52
+     fb8:	fb810038 	swi	r28, r1, 56
+     fbc:	ead70048 	lwi	r22, r23, 72
+     fc0:	be1600c4 	beqid	r22, 196		// 1084
+     fc4:	13250000 	addk	r25, r5, r0
+     fc8:	13660000 	addk	r27, r6, r0
+     fcc:	33000001 	addik	r24, r0, 1
+     fd0:	ea760004 	lwi	r19, r22, 4
+     fd4:	3273ffff 	addik	r19, r19, -1
+     fd8:	be5300ac 	bltid	r19, 172		// 1084
+     fdc:	eb560088 	lwi	r26, r22, 136
+     fe0:	be3b00d0 	bneid	r27, 208		// 10b0
+     fe4:	30730020 	addik	r3, r19, 32
+     fe8:	e8760004 	lwi	r3, r22, 4
+     fec:	10b39800 	addk	r5, r19, r19
+     ff0:	10852800 	addk	r4, r5, r5
+     ff4:	3063ffff 	addik	r3, r3, -1
+     ff8:	10962000 	addk	r4, r22, r4
+     ffc:	88639800 	xor	r3, r3, r19
+    1000:	be030108 	beqid	r3, 264		// 1108
+    1004:	e8e40008 	lwi	r7, r4, 8
+    1008:	f8040008 	swi	r0, r4, 8
+    100c:	bc07006c 	beqi	r7, 108		// 1078
+    1010:	be1a00d0 	beqid	r26, 208		// 10e0
+    1014:	eb960004 	lwi	r28, r22, 4
+    1018:	e87a0100 	lwi	r3, r26, 256
+    101c:	a653001f 	andi	r18, r19, 31
+    1020:	1080c000 	addk	r4, r0, r24
+    1024:	be120014 	beqid	r18, 20		// 1038
+    1028:	10840000 	addk	r4, r4, r0
+    102c:	3252ffff 	addik	r18, r18, -1
+    1030:	be32fffc 	bneid	r18, -4		// 102c
+    1034:	10842000 	addk	r4, r4, r4
+    1038:	84641800 	and	r3, r4, r3
+    103c:	be0300a4 	beqid	r3, 164		// 10e0
+    1040:	10a52800 	addk	r5, r5, r5
+    1044:	e87a0104 	lwi	r3, r26, 260
+    1048:	c8a5d000 	lw	r5, r5, r26
+    104c:	84841800 	and	r4, r4, r3
+    1050:	be2400c0 	bneid	r4, 192		// 1110
+    1054:	10c50000 	addk	r6, r5, r0
+    1058:	99fc3800 	brald	r15, r7
+    105c:	10b90000 	addk	r5, r25, r0
+    1060:	e8760004 	lwi	r3, r22, 4
+    1064:	8863e000 	xor	r3, r3, r28
+    1068:	be230090 	bneid	r3, 144		// 10f8
+    106c:	e8970048 	lwi	r4, r23, 72
+    1070:	8864b000 	xor	r3, r4, r22
+    1074:	bc230084 	bnei	r3, 132		// 10f8
+    1078:	3273ffff 	addik	r19, r19, -1
+    107c:	a873ffff 	xori	r3, r19, -1
+    1080:	bc23ff60 	bnei	r3, -160		// fe0
+    1084:	e9e10000 	lwi	r15, r1, 0
+    1088:	ea61001c 	lwi	r19, r1, 28
+    108c:	eac10020 	lwi	r22, r1, 32
+    1090:	eae10024 	lwi	r23, r1, 36
+    1094:	eb010028 	lwi	r24, r1, 40
+    1098:	eb21002c 	lwi	r25, r1, 44
+    109c:	eb410030 	lwi	r26, r1, 48
+    10a0:	eb610034 	lwi	r27, r1, 52
+    10a4:	eb810038 	lwi	r28, r1, 56
+    10a8:	b60f0008 	rtsd	r15, 8
+    10ac:	3021003c 	addik	r1, r1, 60
+    10b0:	10631800 	addk	r3, r3, r3
+    10b4:	be1affc4 	beqid	r26, -60		// 1078
+    10b8:	10631800 	addk	r3, r3, r3
+    10bc:	c863d000 	lw	r3, r3, r26
+    10c0:	8863d800 	xor	r3, r3, r27
+    10c4:	bc03ff24 	beqi	r3, -220		// fe8
+    10c8:	3273ffff 	addik	r19, r19, -1
+    10cc:	a873ffff 	xori	r3, r19, -1
+    10d0:	be23ffe0 	bneid	r3, -32		// 10b0
+    10d4:	30730020 	addik	r3, r19, 32
+    10d8:	b810ffb0 	brid	-80		// 1088
+    10dc:	e9e10000 	lwi	r15, r1, 0
+    10e0:	99fc3800 	brald	r15, r7
+    10e4:	80000000 	or	r0, r0, r0
+    10e8:	e8760004 	lwi	r3, r22, 4
+    10ec:	8863e000 	xor	r3, r3, r28
+    10f0:	be03ff80 	beqid	r3, -128		// 1070
+    10f4:	e8970048 	lwi	r4, r23, 72
+    10f8:	be04ff8c 	beqid	r4, -116		// 1084
+    10fc:	12c40000 	addk	r22, r4, r0
+    1100:	b810fed4 	brid	-300		// fd4
+    1104:	ea760004 	lwi	r19, r22, 4
+    1108:	b810ff04 	brid	-252		// 100c
+    110c:	fa760004 	swi	r19, r22, 4
+    1110:	99fc3800 	brald	r15, r7
+    1114:	80000000 	or	r0, r0, r0
+    1118:	b810ff4c 	brid	-180		// 1064
+    111c:	e8760004 	lwi	r3, r22, 4
+
+00001120 <_exception_handler>:
+    1120:	98085800 	bra	r11
+
+00001124 <_program_clean>:
+    1124:	b60f0008 	rtsd	r15, 8
+    1128:	80000000 	or	r0, r0, r0
+
+0000112c <_program_init>:
+    112c:	b60f0008 	rtsd	r15, 8
+    1130:	80000000 	or	r0, r0, r0
+
+00001134 <__do_global_ctors_aux>:
+    1134:	3021fff8 	addik	r1, r1, -8
+    1138:	fa610004 	swi	r19, r1, 4
+    113c:	b0000000 	imm	0
+    1140:	3260125c 	addik	r19, r0, 4700	// 125c <__CTOR_END__>
+    1144:	f9e10000 	swi	r15, r1, 0
+    1148:	e873fffc 	lwi	r3, r19, -4
+    114c:	a883ffff 	xori	r4, r3, -1
+    1150:	be040020 	beqid	r4, 32		// 1170
+    1154:	3273fffc 	addik	r19, r19, -4
+    1158:	99fc1800 	brald	r15, r3
+    115c:	80000000 	or	r0, r0, r0
+    1160:	e873fffc 	lwi	r3, r19, -4
+    1164:	a883ffff 	xori	r4, r3, -1
+    1168:	be24fff0 	bneid	r4, -16		// 1158
+    116c:	3273fffc 	addik	r19, r19, -4
+    1170:	e9e10000 	lwi	r15, r1, 0
+    1174:	ea610004 	lwi	r19, r1, 4
+    1178:	b60f0008 	rtsd	r15, 8
+    117c:	30210008 	addik	r1, r1, 8
+
+00001180 <print>:
+/**
+* print -- do a raw print of a string
+*
+******************************************************************************/
+void print(const char8 *ptr)
+{
+    1180:	3021fff8 	addik	r1, r1, -8
+    1184:	fa610004 	swi	r19, r1, 4
+    1188:	f9e10000 	swi	r15, r1, 0
+    118c:	12650000 	addk	r19, r5, r0
+#if defined (__aarch64__) && (HYP_GUEST == 1) && (EL1_NONSECURE == 1) && defined (XEN_USE_PV_CONSOLE)
+	XPVXenConsole_Write(ptr);
+#else
+#if defined(STDOUT_BASEADDRESS) || defined(SDT)
+  while (*ptr != (char8)0) {
+    1190:	e0a50000 	lbui	r5, r5, 0
+    1194:	90650060 	sext8	r3, r5
+    1198:	be030028 	beqid	r3, 40		// 11c0
+    119c:	e9e10000 	lwi	r15, r1, 0
+    outbyte (*ptr);
+    11a0:	b0000000 	imm	0
+    11a4:	b9f40030 	brlid	r15, 48	// 11d4 <outbyte>
+    11a8:	80000000 	or	r0, r0, r0
+  while (*ptr != (char8)0) {
+    11ac:	e0b30001 	lbui	r5, r19, 1
+    11b0:	90650060 	sext8	r3, r5
+    11b4:	be23ffec 	bneid	r3, -20		// 11a0
+    11b8:	32730001 	addik	r19, r19, 1
+  }
+#else
+(void)ptr;
+#endif
+#endif
+}
+    11bc:	e9e10000 	lwi	r15, r1, 0
+    11c0:	ea610004 	lwi	r19, r1, 4
+    11c4:	b60f0008 	rtsd	r15, 8
+    11c8:	30210008 	addik	r1, r1, 8
+
+000011cc <XNullHandler>:
+*
+******************************************************************************/
+void XNullHandler(void *NullParameter)
+{
+	(void) NullParameter;
+}
+    11cc:	b60f0008 	rtsd	r15, 8
+    11d0:	80000000 	or	r0, r0, r0
+
+000011d4 <outbyte>:
+    11d4:	b0004060 	imm	16480
+    11d8:	30800008 	addik	r4, r0, 8
+    11dc:	e8640000 	lwi	r3, r4, 0
+    11e0:	a4630008 	andi	r3, r3, 8
+    11e4:	bc23fff8 	bnei	r3, -8		// 11dc
+    11e8:	a4a500ff 	andi	r5, r5, 255
+    11ec:	b0004060 	imm	16480
+    11f0:	f8a00004 	swi	r5, r0, 4
+    11f4:	b60f0008 	rtsd	r15, 8
+    11f8:	80000000 	or	r0, r0, r0
+
+Disassembly of section .init:
+
+000011fc <__init>:
+    11fc:	3021fff0 	addik	r1, r1, -16
+    1200:	d9e00800 	sw	r15, r0, r1
+    1204:	3160ffff 	addik	r11, r0, -1
+    1208:	940bc802 	mts	rshr, r11
+    120c:	31600000 	addik	r11, r0, 0
+    1210:	940bc800 	mts	rslr, r11
+    1214:	b000ffff 	imm	-1
+    1218:	b9f4f070 	brlid	r15, -3984	// 288 <frame_dummy>
+    121c:	80000000 	or	r0, r0, r0
+    1220:	b000ffff 	imm	-1
+    1224:	b9f4ff10 	brlid	r15, -240	// 1134 <__do_global_ctors_aux>
+    1228:	80000000 	or	r0, r0, r0
+    122c:	c9e00800 	lw	r15, r0, r1
+    1230:	b60f0008 	rtsd	r15, 8
+    1234:	30210010 	addik	r1, r1, 16
+
+Disassembly of section .fini:
+
+00001238 <__fini>:
+    1238:	3021fff0 	addik	r1, r1, -16
+    123c:	d9e00800 	sw	r15, r0, r1
+    1240:	b000ffff 	imm	-1
+    1244:	b9f4ef64 	brlid	r15, -4252	// 1a8 <__do_global_dtors_aux>
+    1248:	80000000 	or	r0, r0, r0
+    124c:	c9e00800 	lw	r15, r0, r1
+    1250:	b60f0008 	rtsd	r15, 8
+    1254:	30210010 	addik	r1, r1, 16
