@@ -4,13 +4,14 @@ use IEEE.NUMERIC_STD.ALL;
 
 
 entity lab3_top is
-	Port (  reset_pb 	: in STD_LOGIC;
-		    sysclk   	: in STD_LOGIC;
-	        led  	    : out STD_LOGIC_VECTOR (3 downto 0);
-            sw          : in std_logic_vector(3 downto 0);
-            uart_rx     : in std_logic;
-            uart_tx     : out std_logic
-		);
+	Port (  
+		reset_pb 	: in STD_LOGIC;
+		sysclk   	: in STD_LOGIC;	
+		led  	    : out STD_LOGIC_VECTOR (3 downto 0);
+		sw          : in std_logic_vector(3 downto 0);
+		uart_rx     : in std_logic;
+		uart_tx     : out std_logic
+	);
 end lab3_top;
 
 
