@@ -4,29 +4,28 @@ use IEEE.NUMERIC_STD.ALL;
 
 
 entity lab3_top is
-	Port (  
-		reset_pb 	: in STD_LOGIC;
-		sysclk   	: in STD_LOGIC;
-	        led  	    	: out STD_LOGIC_VECTOR (3 downto 0);
-            	sw		: in std_logic_vector(3 downto 0);
-            	uart_rx     	: in std_logic;
-            	uart_tx     	: out std_logic
-	);
+	Port (  reset_pb 	: in STD_LOGIC;
+		    sysclk   	: in STD_LOGIC;
+	        led  	    : out STD_LOGIC_VECTOR (3 downto 0);
+            sw          : in std_logic_vector(3 downto 0);
+            uart_rx     : in std_logic;
+            uart_tx     : out std_logic
+		);
 end lab3_top;
 
 
 architecture Behavioral of lab3_top is
-	signal ctr : unsigned(3 downto 0);
-	signal clk,rst,ena_2Hz : std_logic;
+	-- signal ctr : unsigned(3 downto 0);
+	-- signal clk,rst,ena_2Hz : std_logic;
 	signal reset, rxd, txd : std_logic;
 
 
-	component clkdivider is
-	  generic (divideby    : natural := 2);
-	  port (  clk          : in std_logic;
-		      reset       : in std_logic;
-		      pulseout    : out std_logic);
-	end component;
+	--component clkdivider is
+	--  generic (divideby    : natural := 2);
+	--  port (  clk          : in std_logic;
+	--	      reset       : in std_logic;
+	--	      pulseout    : out std_logic);
+	-- end component;
 
 
 component ubsys is port (
@@ -47,10 +46,16 @@ end component ;
     --end component;
 begin
 
-	clk <= sysclk;
-	rst <= not reset_pb;
-	make2Hz: clkdivider generic map (divideby => 62500000)
-	port map (clk => clk, reset=> rst, pulseout => ena_2hz);
+	-- clk <= sysclk;
+	-- rst <= not reset_pb;
+	
+	--make2Hz: clkdivider 
+	--   generic map (divideby => 62500000)
+	--   port map (
+	--       clk => clk, 
+	--       reset=> rst, 
+	--       pulseout => ena_2hz
+	 --  );
 
 
     --design_ub_2_0 : design_ub_2  port map (
@@ -73,15 +78,15 @@ begin
 
 	-- just a silly counter for demo purposes
 	
-	process(clk,rst)
-	begin
-		if rst='1' then
-			ctr <= (others=>'0');
-		elsif rising_edge(clk) then
-			if ena_2hz='1' then
-				ctr <= ctr + 1;
-			end if;
-		end if;
-	end process;
+	-- process(clk,rst)
+	-- begin
+	--	if rst='1' then
+	--		ctr <= (others=>'0');
+	--	elsif rising_edge(clk) then
+	--		if ena_2hz='1' then
+	--			ctr <= ctr + 1;
+	--		end if;
+	--	end if;
+	-- end process;
 
 end Behavioral;
